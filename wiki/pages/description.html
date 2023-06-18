@@ -1,57 +1,87 @@
+<style>
+  #subtitle1:target {
+      padding-top: 60px;
+      margin-top: -60px;
+  }
+
+
+  #to-the-top {
+      /*svg导航*/
+      height: 30px;
+      width: 30px;
+      bottom: 150px;
+      right: 0px;
+      position: fixed;
+      display: none;
+      /*padding: 10px;*/
+      margin: 10px;
+  }
+
+  #to-the-bottom {
+      height: 30px;
+      width: 30px;
+      bottom: 110px;
+      right: 0px;
+      position: fixed;
+      /*padding: 10px;*/
+      margin: 10px;
+  }
+
+</style>
+
 {% extends "layout.html" %}
   
-{% block title %}Project Description{% endblock %}
-{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}
+{% block lead %}
+
+{% endblock %}
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Describe how and why you chose your iGEM project.<p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
-    </div>
+<div class="container">
+  <div class="catalogue">
+      <h4>content</h4>
+      <ul>
+          <li><a href="#sectitle1">Background</a></li>
+          <li><a href="#sectitle2">背景</a></li>
+      </ul>
+  </div>
+  <div class="main content">
+      <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="content col-lg-10">
+              <article>
+                  <h1 class="sectitle title-cover" id="sectitle1">Section 1 : Background</h1>
+                  <p>
+                    In the long history of mankind, we always look up at the stars and yearn for the space. With the flourishing development of science and technology, human’s longing for the universe has gradually moved from fantasy to reality. Over the past one hundred years, with satellites in the sky, manned spaceflight, Apollo landings on the moon, the construction of space stations and the exploration of Mars, human has run to the cosmos step by step and we believes that extraterrestrial migration is not an unattainable future.
+                  </p>
+                  <p>
+                    However, there are still many challenges to be solved for extraterrestrial migration, such as food, energy and oxygen supply. This year, our HUST-China team hopes to solve the problem of oxygen and electricity supply on the extraterrestrial migration bases by collaborating with cyanobacteria and Shewanella oneidensis, which are essential for human survival in outer space. 
+                  </p>
+                  <p>
+                    We will engineer the cyanobacteria to produce lactic acid to provide a carbon source for the Shewanella oneidensis, and introduce protein OmcS to enhance photosynthesis and NADH concentration to increase lactate and oxygen production. In the case of Schwannia, we increased the electricity production capacity by improving NADH synthesis.
+                  </p>
+                  <p>
+                    As the extraterrestrial environment is very different from the Earth environment, one of the major problems is cosmic radiation. To enable our engineered bacteria to survive in the extraterrestrial environment, we will introduce antioxidant enzymes and the DNA protecting protein Dsup to both bacteria to address the problem of cosmic radiation. We also plan to design a bioreactors to adapt the engineered bacteria to the harsh extraterrestrial environment.
+                  </p>
+                  <h1 class="sectitle title-cover" id="sectitle2">Section 2 : 背景</h1>
+                  <p>
+                    人类漫长的历史中，始终没有缺少的一件事便是仰望星空。随着科学技术的蓬勃发展，人类对宇宙的向往逐渐由幻想奔赴现实。近百年来，卫星上天、载人航天、阿波罗登月、空间站建成、火星探索，人类一点点地向宇宙迈出脚步，相信地外移民已并非是遥不可及的未来。
+                  </p>
+                  <p>
+                    但是地外移民还有许多困难挑战没有解决，食品，能源，氧气的供给都需要解决，我们HUST-China团队今年希望通过蓝藻与希瓦氏菌的协作，解决地外移民基地人类维生所必须的氧气供给和电能供给的问题。
+                  </p>
+                  <p>
+                    我们对蓝藻进行工程改造，使蓝藻生产乳酸为希瓦氏菌提供碳源；引入OmcS增强光合作用和NADH浓度，增加乳酸与氧气产量。对于希瓦氏菌，我们通过增加NADH的合成来提高产电能力。
+                  </p>
+                  <p>
+                    由于地外环境相较于地球环境差异十分巨大，其中一个比较大的问题便是宇宙辐射，为了我们的工程菌能够在地外环境下生存，我们对两种菌都引入了抗氧化的酶和DNA保护蛋白Dsup来解决宇宙中的辐射问题。我们也计划设计相应的生物反应器来让工程菌适应严酷的地外环境。
+                  </p>
+                 </article>
+          </div>
+      </div>
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>A clear and concise description of your project.</li>
-      <li>A detailed explanation of why your team chose to work on this particular project.</li>
-      <li>References and sources to document your research.</li>
-      <li>Use illustrations and other visual resources to explain your project.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
-      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
-      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
-      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
-      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
-      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
-    </ul>
-  </div>
-</div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Some advice</h2>
-    <hr>
-    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr>
-    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
-  </div>
-</div>
 
 {% endblock %}
