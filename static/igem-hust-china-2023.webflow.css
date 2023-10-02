@@ -3113,7 +3113,7 @@ li {
   }
 
   .nav-dropdown-list.shadow-three.mobile-shadow-hide.w--open {
-    background-color: rgba(188, 196, 195, .75);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .gallery-scroll {
@@ -3778,7 +3778,7 @@ li {
   }
 
   .progress-bar {
-    padding: 60px 15px;
+    padding: 0 15px;
   }
 
   .features-wrapper {
