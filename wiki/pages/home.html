@@ -55,9 +55,9 @@
                 <div class="text-block-7"><span>Project</span></div>
               </div>
               <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
-                <a href="discription.html" class="nav-dropdown-link w-dropdown-link">Description</a>
-                <a href="hardware.html" class="nav-dropdown-link w-dropdown-link">Hardware</a>
-                <a href="safety.html" class="nav-dropdown-link w-dropdown-link">Safety</a>
+                <a href="{{ url_for('pages', page='description') }}" class="nav-dropdown-link w-dropdown-link">Description</a>
+                <a href="{{ url_for('pages', page='hardware') }}" class="nav-dropdown-link w-dropdown-link">Hardware</a>
+                <a href="{{ url_for('pages', page='safety') }}" class="nav-dropdown-link w-dropdown-link">Safety</a>
                 <a href="proposed.html" class="nav-dropdown-link w-dropdown-link">Proposed</a>
                 <a href="implementation.html" class="nav-dropdown-link w-dropdown-link">Implementation</a>
               </nav>
@@ -71,10 +71,10 @@
               </div>
               <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
                 <a href="contributions.html" class="nav-dropdown-link w-dropdown-link">Design</a>
-                <a href="engineering.html" class="nav-dropdown-link w-dropdown-link">Engineering</a>
+                <a href="{{ url_for('pages', page='engineering') }}" class="nav-dropdown-link w-dropdown-link">Engineering</a>
                 <a href="protocol.html" class="nav-dropdown-link w-dropdown-link">Protocol</a>
-                <a href="results.html" class="nav-dropdown-link w-dropdown-link">Results</a>
-                <a href="notebook.html" class="nav-dropdown-link w-dropdown-link">Notebook</a>
+                <a href="{{ url_for('pages', page='results') }}" class="nav-dropdown-link w-dropdown-link">Results</a>
+                <a href="{{ url_for('pages', page='notebook') }}" class="nav-dropdown-link w-dropdown-link">Notebook</a>
                 <a href="parts.html" class="nav-dropdown-link w-dropdown-link">Parts</a>
               </nav>
             </div>
@@ -89,8 +89,8 @@
                 <div>HP</div>
               </div>
               <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
-                <a href="human-practices.html" class="nav-dropdown-link w-dropdown-link">Human<br>Practices</a>
-                <a href="education.html" class="nav-dropdown-link w-dropdown-link">Education&amp;<br>Communication</a>
+                <a href="{{ url_for('pages', page='human-practices') }}" class="nav-dropdown-link w-dropdown-link">Human<br>Practices</a>
+                <a href="{{ url_for('pages', page='education') }}" class="nav-dropdown-link w-dropdown-link">Education&amp;<br>Communication</a>
               </nav>
             </div>
           </li>
@@ -101,7 +101,7 @@
                 <div>Team</div>
               </div>
               <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
-                <a href="contribution.html" class="nav-dropdown-link w-dropdown-link">Contribution</a>
+                <a href="{{ url_for('pages', page='contribution') }}" class="nav-dropdown-link w-dropdown-link">Contribution</a>
                 <a href="members.html" class="nav-dropdown-link w-dropdown-link">Members</a>
                 <a href="collaboration.html" class="nav-dropdown-link w-dropdown-link">Collaboration</a>
                 <a href="partnership.html" class="nav-dropdown-link w-dropdown-link">Partnership</a>
