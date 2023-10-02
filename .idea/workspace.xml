@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d82e4ea-6369-44b1-96c6-2e0bd6225e83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiki/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/pages/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +35,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/lucas/HUST-China-2023/wiki/pages&quot;,
@@ -64,6 +67,7 @@
       <updated>1696152547870</updated>
       <workItem from="1696152548995" duration="9117000" />
       <workItem from="1696210324818" duration="2946000" />
+      <workItem from="1696246049212" duration="1316000" />
     </task>
     <servers />
   </component>
