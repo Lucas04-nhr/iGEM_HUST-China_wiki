@@ -1,0 +1,162 @@
+{% block page_content %}
+<!doctype html>
+<html lang="en">
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/4595/wiki/logo-xiao.png"/>
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="static/style.css" rel="stylesheet">
+
+    <title>Project Description | HUST-China - iGEM 2023</title>
+
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="#">HUST-China</a>
+
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
+
+        <!---- HOME ---->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+        </li>
+
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Team</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+          </ul>
+        </li>
+
+        <!---- PROJECT ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
+          </ul>
+        </li>
+
+        <!---- SAFETY ---->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
+        </li>
+
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+        </li>
+
+        <!---- AWARDS ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Awards
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='measurement') }}">Measurement</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Model</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='plant') }}">Plant</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='software') }}">Software</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='sustainable') }}">Sustainable</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- Header -->
+<header>
+ <header class="bg-hero py-5 margin-bottom: 4rem!important" style="	background-attachment: fixed;bacground repeat:no repeat;
+  background-image: url(https://static.igem.wiki/teams/4595/wiki/logo-5-1.png);
+  background-size:auto 95%; height:500px;"
+ >
+
+
+
+  
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-black mt-5 mb-2" style="font-weight:700;">Project Description</h1>
+	        
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div class="container">
+
+ <div class="catalogue">
+  </div>
+  <div class="main content">
+      <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="content col-lg-10">
+              <article>
+                  <h1 class="sectitle title-cover" id="sectitle1">Section 1 : Background</h1>
+                  <p>
+                    In the long history of mankind, we always look up at the stars and yearn for the space. With the flourishing development of science and technology, human’s longing for the universe has gradually moved from fantasy to reality. Over the past one hundred years, with satellites in the sky, manned spaceflight, Apollo landings on the moon, the construction of space stations and the exploration of Mars, human has run to the cosmos step by step and we believes that extraterrestrial migration is not an unattainable future.
+                  </p>
+                  <p>
+                    However, there are still many challenges to be solved for extraterrestrial migration, such as food, energy and oxygen supply. This year, our HUST-China team hopes to solve the problem of oxygen and electricity supply on the extraterrestrial migration bases by collaborating with cyanobacteria and Shewanella oneidensis, which are essential for human survival in outer space. 
+                  </p>
+                  <p>
+                    We will engineer the cyanobacteria to produce lactic acid to provide a carbon source for the Shewanella oneidensis, and introduce protein OmcS to enhance photosynthesis and NADH concentration to increase lactate and oxygen production. In the case of Schwannia, we increased the electricity production capacity by improving NADH synthesis.
+                  </p>
+                  <p>
+                    As the extraterrestrial environment is very different from the Earth environment, one of the major problems is cosmic radiation. To enable our engineered bacteria to survive in the extraterrestrial environment, we will introduce antioxidant enzymes and the DNA protecting protein Dsup to both bacteria to address the problem of cosmic radiation. We also plan to design a bioreactors to adapt the engineered bacteria to the harsh extraterrestrial environment.
+                  </p>
+                  <h1 class="sectitle title-cover" id="sectitle2">Section 2 : 背景</h1>
+                  <p>
+                    人类漫长的历史中，始终没有缺少的一件事便是仰望星空。随着科学技术的蓬勃发展，人类对宇宙的向往逐渐由幻想奔赴现实。近百年来，卫星上天、载人航天、阿波罗登月、空间站建成、火星探索，人类一点点地向宇宙迈出脚步，相信地外移民已并非是遥不可及的未来。
+                  </p>
+                  <p>
+                    但是地外移民还有许多困难挑战没有解决，食品，能源，氧气的供给都需要解决，我们HUST-China团队今年希望通过蓝藻与希瓦氏菌的协作，解决地外移民基地人类维生所必须的氧气供给和电能供给的问题。
+                  </p>
+                  <p>
+                    我们对蓝藻进行工程改造，使蓝藻生产乳酸为希瓦氏菌提供碳源；引入OmcS增强光合作用和NADH浓度，增加乳酸与氧气产量。对于希瓦氏菌，我们通过增加NADH的合成来提高产电能力。
+                  </p>
+                  <p>
+                    由于地外环境相较于地球环境差异十分巨大，其中一个比较大的问题便是宇宙辐射，为了我们的工程菌能够在地外环境下生存，我们对两种菌都引入了抗氧化的酶和DNA保护蛋白Dsup来解决宇宙中的辐射问题。我们也计划设计相应的生物反应器来让工程菌适应严酷的地外环境。
+                  </p>
+                 </article>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
