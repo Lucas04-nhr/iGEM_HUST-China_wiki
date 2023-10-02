@@ -1905,7 +1905,7 @@ __p+='`
         var GZ = et(),
             VZ = 0,
             jZ = Math.random(),
-            KZ = GZ(1,toString);
+            KZ = GZ(1.toString);
         OO.exports = function(e) {
             return "Symbol(" + (e === void 0 ? "" : e) + ")_" + KZ(++VZ + jZ, 36)
         }
@@ -12780,7 +12780,7 @@ __p+='`
     });
     var Zf = d((Iot, nB) => {
         var Eqe = et();
-        nB.exports = Eqe(1,valueOf)
+        nB.exports = Eqe(1.valueOf)
     });
     var ed = d((Lot, iB) => {
         iB.exports = `	
@@ -13053,7 +13053,7 @@ __p+='`
             WB = Math.floor,
             mA = AA(MDe),
             xB = AA("".slice),
-            bc = AA(1,toFixed),
+            bc = AA(1.toFixed),
             eo = function(e, t, r) {
                 return t === 0 ? r : t % 2 === 1 ? eo(e, t - 1, r * e) : eo(e * e, t / 2, r)
             },
