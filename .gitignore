@@ -9,3 +9,5 @@ public
 .idea/jsLibraryMappings.xml
 *.xml
 *.xml
+*.xml
+.idea/workspace.xml
