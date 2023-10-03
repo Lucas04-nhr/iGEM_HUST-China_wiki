@@ -125,251 +125,48 @@
   </div>
  <div class="container">
    <style>
-      @font-face {
-	font-family:Silkscreen;
-	src: url(static/Silkscreen-Regular.ttf);
-}
-@font-face {
-    font-family: Montserrat;
-    src: url(static/Montserrat-Regular.ttf);
-}
+      .side {
+            justify-content: flex-start;
+            top: 200px;
+            height: 600px;
+            width: 100% !important;
+            position: sticky;
+            -webkit-position: sticky;
+        }
 
-@font-face {
-    font-family: Mukta;
-    src: url(static/Mukta-Regular.ttf);
-}
+        .side_nav {
+            line-height: 3em;
+            padding: 0 !important;
+            margin: 0 !important;
+            list-style: none;
+        }
 
-@font-face {
-    font-family: Ubuntu;
-    src: url(static/Ubuntu-Regular.ttf);
-}
+        .side_nav ul li {
+            margin: 6px 20px;
+        }
 
-@font-face {
-    font-family: Josefin_Sans;
-    src: url(static/JosefinSans-Regular.ttf);
-}
-
-      </style>
-     <div id="cover"></div>
-<script>
-    var cata21 = document.getElementById("cata21")
-    var cata22 = document.getElementById("cata22")
-    var cata23 = document.getElementById("cata23")
-    var cata24 = document.getElementById("cata24")
-    var cata25 = document.getElementById("cata25")
-        $(document).ready(function () {
-            $("#cricle").click(function () {
-                $("#cricle1").fadeToggle("slow");
-                //$("#cricle2").fadeToggle("slow");
-                $("#cricle2").fadeOut("slow");
-                $("#cover").fadeToggle("slow");
-                $("#cata21").animate({
-                    opacity: "1"
-                },"10")
-                $("#cata22").animate({
-                    opacity: "0"
-                },"10")
-                $("#cata23").animate({
-                    opacity: "0"
-                },"10")
-                $("#cata24").animate({
-                    opacity: "0"
-                },"10")
-                $("#cata25").animate({
-                    opacity: "0"
-                },"10")
-                cata21.style.zIndex = 14;
-            cata22.style.zIndex = 13;
-            cata23.style.zIndex = 12;
-            cata24.style.zIndex = 11;
-            cata25.style.zIndex = 10;
-            cata21.style.display = "block";
-            cata22.style.display = "none";
-            cata23.style.display = "none";
-            cata24.style.display = "none";
-            cata25.style.display = "none";
-            });
-            $("#cover").click(function () {
-                $("#cricle1").fadeOut("slow");
-                $("#cricle2").fadeOut("slow")
-                $("#cover").fadeOut("slow")
-                $("#cricle").fadeTo("slow", 1);
-            })
-            $("#catalog1").click(function () {
-                $("#cricle2").fadeTo(1000, 1);
-                $("#cricle2").animate({
-                    opacity: 1,
-                    left: '240px',
-                    top: '140px',
-                    width: '420px',
-                    height: '420px'
-                }, "210");
-                $("#cata21").animate({
-                    opacity: "1"
-                },"100")
-                $("#cata22").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata23").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata24").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata25").animate({
-                    opacity: "0"
-                },"100")
-            cata21.style.zIndex = 14;
-            cata22.style.zIndex = 13;
-            cata23.style.zIndex = 12;
-            cata24.style.zIndex = 11;
-            cata25.style.zIndex = 10;
-            cata21.style.display = "block";
-            cata22.style.display = "none";
-            cata23.style.display = "none";
-            cata24.style.display = "none";
-            cata25.style.display = "none";
-            })
-            $("#catalog2").click(function () {
-                $("#cricle2").fadeTo(1000, 1);
-                $("#cricle2").animate({
-                    opacity: 1,
-                    left: '225px',
-                    top: '125px',
-                    width: '450px',
-                    height: '450px'
-                }, "210");
-                $("#cata21").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata22").animate({
-                    opacity: "1"
-                },"100")
-                $("#cata23").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata24").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata25").animate({
-                    opacity: "0"
-                },"100")
-            cata21.style.zIndex = 13;
-            cata22.style.zIndex = 14;
-            cata23.style.zIndex = 12;
-            cata24.style.zIndex = 11;
-            cata25.style.zIndex = 10;
-            cata21.style.display = "none";
-            cata22.style.display = "block";
-            cata23.style.display = "none";
-            cata24.style.display = "none";
-            cata25.style.display = "none";
-            })
-            $("#catalog3").click(function () {
-                $("#cricle2").fadeTo(1000, 1);
-                $("#cricle2").animate({
-                    opacity: 1,
-                    left: '275px',
-                    top: '175px',
-                    width: '350px',
-                    height: '350px'
-                }, "210");
-                $("#cata21").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata22").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata23").animate({
-                    opacity: "1"
-                },"100")
-                $("#cata24").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata25").animate({
-                    opacity: "0"
-                },"100")
-                cata21.style.zIndex = 12;
-            cata22.style.zIndex = 13;
-            cata23.style.zIndex = 14;
-            cata24.style.zIndex = 11;
-            cata25.style.zIndex = 10;
-            cata21.style.display = "none";
-            cata22.style.display = "none";
-            cata23.style.display = "block";
-            cata24.style.display = "none";
-            cata25.style.display = "none";
-            })
-            $("#catalog4").click(function () {
-                $("#cricle2").fadeTo(1000, 1);
-                $("#cricle2").animate({
-                    opacity: 1,
-                    left: '300px',
-                    top: '200px',
-                    width: '300px',
-                    height: '300px'
-                }, "210");
-                $("#cata21").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata22").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata23").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata24").animate({
-                    opacity: "1"
-                },"100")
-                $("#cata25").animate({
-                    opacity: "0"
-                },"100")
-                            cata21.style.zIndex = 11;
-            cata22.style.zIndex = 12;
-            cata23.style.zIndex = 13;
-            cata24.style.zIndex = 14;
-            cata25.style.zIndex = 10;
-            cata21.style.display = "none";
-            cata22.style.display = "none";
-            cata23.style.display = "none";
-            cata24.style.display = "block";
-            cata25.style.display = "none";
-            })
-            $("#catalog5").click(function () {
-                $("#cricle2").fadeTo(1000, 1);
-                $("#cricle2").animate({
-                    left: '250px',
-                    top: '150px',
-                    width: '400px',
-                    height: '400px'
-                }, "210");
-                $("#cata21").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata22").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata23").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata24").animate({
-                    opacity: "0"
-                },"100")
-                $("#cata25").animate({
-                    opacity: "1"
-                },"100")
-                            cata21.style.zIndex = 10;
-            cata22.style.zIndex = 11;
-            cata23.style.zIndex = 12;
-            cata24.style.zIndex = 13;
-            cata25.style.zIndex = 14;
-            cata21.style.display = "none";
-            cata22.style.display = "none";
-            cata23.style.display = "none";
-            cata24.style.display = "none";
-            cata25.style.display = "block";
-            })
-        });
+        .side_nav .side_navli .strongtitle {
+            border-radius: 20px;
+            font-size: 16px;
+            position: relative;
+            left: 28px;
+            font-family: 'Poppins';
+          }
+        .side_nav .f-hover .strongtitle {
+            background: rgba(170, 222, 245, 0.4);
+            box-shadow: 0 10px 15px 0 rgba(236, 116, 149, 0.75);
+            font-family: 'Snat';
+            /* border-left: 2.8px solid;
+            border-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00bbf2 20%, rgba(255, 255, 255, 0) 99%) 2 2 2 2; */
+            color: green;
+            padding-left: 5px;
+            font-size: 18px;
+            transition: all 1s;
+        }
+       .side_nav_scroll {
+            /* margin-top: 200px; */
+            width: 100%;
+        }
     </script>
   <!-- Header -->
     
@@ -382,7 +179,26 @@
 
   <!-- Page Content -->
   <div class="container">
-    
+    </div>
+    <main class="grid">
+        <div class="main_left">
+            <div class="side">
+                <ul class="side_nav">
+                    <li class="side_navli hvr-pop"><a href="#first" class="nava"><strong
+                                class="strongtitle hvr-shutter-in-horizontal">Overview</strong></a></li>
+                    <li class="side_navli hvr-pop"><a href="#second" class="nava"><strong
+                                class="strongtitle hvr-shutter-in-horizontal">Common goals
+                            </strong></a></li>
+                    <li class="side_navli hvr-pop"><a href="#third" class="nava"><strong
+                                class="strongtitle hvr-shutter-in-horizontal">Stage1</strong></a></li>
+                    <li class="side_navli hvr-pop"><a href="#forth" class="nava"><strong
+                                class="strongtitle hvr-shutter-in-horizontal">Stage2</strong></a></li>
+                    <li class="side_navli hvr-pop"><a href="#fifth" class="nava"><strong
+                                class="strongtitle hvr-shutter-in-horizontal">Stage3</strong></a></li>
+
+                </ul>
+            </div>
+        </div>
 <div class="container">
         <div class="catalogue">
             <h4>content</h4>
