@@ -28,6 +28,16 @@
   </script>
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+    .catalogue {
+      width: 160px;
+      height: auto;
+      position: fixed;
+      left: 0px;
+      top: 50%;
+
+    }
+  </style>
 </head>
 
 <body class="body">
@@ -123,5 +133,376 @@
       </div>
     </div>
   </div>
- 
+ <div class="container">
+    <div class="catalogue">
+      <h4>content</h4>
+      <ul>
+        <li><a href="#sectitle1">Introduction</a></li>
+        <li><a href="#sectitle2">Cycle1:Construct by the homologous recombination method</a></li>
+        <li><a href="#sectitle3">Cycle2:Construct by overlap and homologous recombination method</a></li>
+        <li><a href="#sectitle4">Cycle3:Expression validation</a></li>
+      </ul>
+    </div>
+    <div class="main content">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="content col-lg-10">
+          <article>
+            <h1 class="sectitle title-cover" id="sectitle1">Introduction</h1>
+            <p>We want to absorb the residual REEs in the waste water of the rare earth industry and be able to recover
+              them. To this end , we designed several components and four system pathways to achieve this goal. In the
+              construction stage, we used homologous recombination to construct the pathway. Although we encountered
+              some problems, we finally achieved certain results through continuous attempts and summaries, which also
+              provided some experience for the subsequent teams.</p>
+            <h1 class="sectitle title-cover" id="sectitle2">Cycle1: Construct by the homologous recombination method
+            </h1>
+            <h2 class="subtitle">1.1 Design</h2>
+            <p>In order to construct a well-functioning systemic pathway, we hope that a single plasmid can be used to
+              complete the two tasks of sensing rare earth ions and enriching rare earth ions, and make the engineered
+              bacteria more sensitive to the sensing of rare earth elements in the environment so that the enrichment
+              could be more efficient. We use existing components with independent functions to connect multiple
+              components into systemic pathways with complete functions to construct complete plasmids to achieve our
+              goal.</p>
+            <p>We set the stage for building the entire systemic pathway when we built the individual components. When
+              we designed it, we wanted to be able to use homologous recombination to build our fully functional
+              plasmids. Firstly in the PmrL and PmrFP pathways , we added the first homologous arm to the downstream of
+              the linearized fragment containing pmrA gene and kanamycin resistance gene as vector and upstream of
+              pmrB(LanM) and pmrB(LBT-LanM). Then a second homologous arm was added to the downstream of pmrB(LanM),
+              pmrB(LBT-LanM) and the upstream of pmrC promoter, after which a third homologous arm was added to the
+              downstream of PmrC and upstream of oprf-sitag-LanM and oprf-sitag- dLBT-LanM .</p>
+            <p>In the GolSL and GolSFP pathways, we added the first homologous arm to the downstream of the linearized
+              fragment containing kanamycin resistance gene and upstream of golS-PgolB. A second homologous arm was
+              added to the downstream of golS-PgolB and upstream of oprf-sitag-LanM and oprf-sitag-dLBT-LanM. Likely, we
+              added a third homologous arm to the downstream of oprf-sitag-LanM and oprf-sitag-dLBT-LanM and upstream of
+              the linearized vector T7-KanR. These homology arms are constructed using PCR using different primers to
+              add to different gene segments. These homologous arms with specificity ensure the feasibility of the
+              experiment in principle.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig1.png" alt="" class="normimg">
+            <i class="imgexplain">Fig. 1. The diagram of constructing the plasmid inserted with PmrL by multi-fragment
+              homologous recombination</i>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig2.png" alt="" class="normimg">
+            <i class="imgexplain">Fig. 2. The diagram of constructing the plasmid inserted with GolSL by multi-fragment
+              homologous recombination</i>
+            <p></p>
+            <h2 class="subtitle">
+              1.2 Build
+            </h2>
+            <p>Using the most efficient seamless cloning principle at present, we selected homologous recombinase to
+              construct the pathway, designed primers in strict accordance with the instructions, and carried out the
+              operation process to construct our plasmid. We used PCR to obtain gene fragments from plasmids containing
+              elements, and then verified and purified by gel recovery. Taking the construction of PmrL system pathway
+              as an example, we first used PCR to obtain the linearized fragment pmrA-KanR as vector and three gene
+              fragments pmrB, PmrC, oprf-sitag-LanM. The purified vector and each gene fragment were verified by re-gel
+              recovery. At last, the vector and fragments were connected by homologous recombinase, transformed and
+              cultured. Finally we validated the colony of bacteria to obtain our plasmid.</p>
+            <p>We attempted to ligate multiple fragments directly to the vector into complete plasmids using homologous
+              recombinases.Take the GolSL system pathway as an example: Firstly, we used PCR to obtain the linearized
+              vector T7-KanR and two gene fragments—golS-PgolB and oprf-sitag-LanM. Then gel recovery was used to verify
+              the purification of the vector and gene fragments. Finally, homologous recombinase was used to directly
+              link the linearized vector T7-KANR with two fragments of golS-PgolB and oprf-sitag-LanM to construct a
+              complete systemic pathway. Then, we transferred the homologous recombination products into TOP10F’ and
+              inoculated onto LB plates containing 50 µg/mL Kana for screening. When the single colony grew, we picked
+              up the colony for PCR verification. After the target band was observed, the bacterial solution was mixed
+              with a 1:1 mixture of glycerol and water, and the seed was preserved to -80℃.</p>
+            <h2 class="subtitle">
+              1.3 Result
+            </h2>
+            <p>We tried to construct our system pathway by multi-fragment homologous recombination. However, after
+              several attempts, the effect was not ideal and the success rate was low. Only plasmids of GolSL system
+              pathway were successfully constructed: T7-golS-T7 Terminator-PgolB-oprf-sitag-LanM-T7 Terminator. However,
+              PmrL, PmrFP and GolSFP pathways were not successfully constructed.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig3.png" alt="" class="normimg">
+            <i class="imgexplain">Fig. 3. The result of PCR identification of GolSL plasmid shows that there is bright
+              band at about 4000 bp, and the length of GolSL plasmid is 4200 bp, which proves that we have successfully
+              constructed the plasmid of GolSL system pathway.</i>
+            <p></p>
+            <h2 class="subtitle">
+              1.4 Learn
+            </h2>
+            <p>After several attempts, we found that the success rate of direct multi fragment homologous recombination
+              was not high. But fortunately, we have achieved some results and constructed one of the four targeted
+              pathways, GolSL . We carefully analyzed and summarized the reasons for the failure. We believe that the
+              success rate of direct homologous recombination is not high due to the large number of gene fragments in
+              PmrL, PmrFP and GolSFP pathways. We think that overlap could be attempted to solve this problem.</p>
+            <h1 class="sectitle title-cover" id="sectitle3">Cycle2: Construct by overlap and homologous recombination
+              method</h1>
+            <h2 class="subtitle">
+              2.1 Design
+            </h2>
+            <p>After many failed attempts, we decided to use overlap to connect multiple short fragments together and
+              insert them into the carrier after purification, so as to avoid the problem of low success rate of
+              homologous recombination of multiple fragments. In the initial design, we have added corresponding
+              homologous arms to each fragment to ensure the feasibility of our experiment in principle. Meanwhile, we
+              have obtained the purified fragments of the corresponding parts in the previous experiments. For PmrL and
+              PmrFP: since pmrB(LanM) or pmrB(LBT-LanM) and PmrC have the same first homologous arm ,we can overlap to
+              connect them. PmrC has the same second homologous arm with oprf-sitag-LanM and oprf-sitag- dLBT-LanM.
+              oprf-sitag-LanM or oprf-sitag- dLBT-LanM can be ligated to previously ligated pmrB（LanM）-PmrC or
+              pmrB(LBT-LanM)-PmrC for single fragment homologous recombination. For GolSFP system: the downstream of
+              golS-PgolB and the upstream of oprf-sitag- dLBT-LanM were added the same homologous arm, which can be
+              connected by overlap. Thus, single fragment homologous recombination can be carried out to improve the
+              success rate.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig4.png" alt="" class="normimg"
+              style"=width:100%">
+            <i class="imgexplain">Fig. 4. PmrL fragment overlay diagram. First, connect 1 (pmrB), 2 (PmrC) by overlap to
+              get 4 (pmrB-PmrC), and then connect 4 (pmrB-PmrC) with 3 (oprf-sitag-LanM) by overlap to connect 1,2,3
+              fragments.</i>
+            <p></p>
+            <h2 class="subtitle">
+              2.2 Build
+            </h2>
+            <p>Due to the large number of gene fragments in PmrL and PmrFP pathways, the success rate of direct
+              homologous recombination was low. Therefore, each gene fragment was first connected by overlapping
+              extension, and finally the connected fragment was homologous recombination with the vector to obtain the
+              plasmid. Taking the construction of PmrL system pathway as an example, firstly linear fragments containing
+              pmrA gene and kanamycin resistance gene as vectors and three gene fragments pmrB, PmrC and oprf-sitag-LanM
+              were obtained by PCR, and then the vector and each gene fragment were verified and purified by gel
+              recovery. Due to the large number of fragments, we used overlap to connect pmrB and PmrC first, and then
+              pmrB-PmrC and oprf-sitag-LanM. Finally, we used homologous recombinase to connect the linearized vector
+              containing pmrA gene with the connected fragment to construct the system pathway. Then, the homologous
+              recombination products were transferred into TOP10F 'and inoculated onto LB plates containing 50µg/mL Kana
+              for screening. When the single colony grew, we picked up the colony for PCR verification. After the target
+              band was observed, the bacterial solution was mixed with a 1:1 mixture of glycerol and water, and the seed
+              was preserved to -80℃.</p>
+            <h2 class="subtitle">
+              2.3 Result
+            </h2>
+            <p>After several attempts, we successfully constructed plasmids of PmrL , PmrFP and GolSFP systematic
+              pathways: T7-pmrA-T7-pmrB(LanM)-T7 Terminator-PmrC-oprf-sitag-LanM-T7 Terminator，T7-pmrA- T7-pmrB(FP)-T7
+              Terminator-PmrC-oprf-sitag- FP- T7 Terminator，T7-golS-T7 Terminator- PgolB- oprf-Sitag- dLBT-LanM - T7
+              Terminator.The three plasmids were constructed by overlap and then homologous recombining of a single
+              fragment.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig5-4.png" alt="" class="normimg"
+              style"=width:100%">
+            <i class="imgexplain">Fig. 5. The left figure is the PCR identification result of PmrL plasmid shows that
+              there is bright band at about 4500 bp, and the length of PmrL plasmid is 4289 bp, which proves that we
+              have successfully constructed the plasmid of PmrL system pathway</i>
+            <i class="imgexplain"> The middle figure is the PCR identification results of PmrFP plasmid shows that there
+              is bright band at about 4500 bp, and the length of PmrFP plasmid is 4439 bp, which proves that we have
+              successfully constructed the plasmid of PmrFP system pathway.</i>
+            <i class="imgexplain"> The right figure is the result of PCR identification of GolSFP plasmid shows that
+              there is bright band at about 4500 bp, and the length of GolSFP plasmid is 4350 bp, which proves that we
+              have successfully constructed the plasmid of GolSFP system pathway.</i>
+            <p></p>
+            <h2 class="subtitle">
+              2.4 Learn
+            </h2>
+            <p>We use overlap to connect multiple short fragments and then carry out homologous recombination of single
+              segments to successfully construct PmrL, PmrFP and GolSFP system pathways so that all the four pathways of
+              our target are successfully constructed. However, we also found some problems in the process of
+              constructing plasmids. For example, the plasmid T7-pmrA- T7-pmrB(FP)-T7 Terminator-PmrC-oprf-sitag-FP-T7
+              Terminator constructed by homologous recombination would have multiple bands. However, the presence of the
+              correct band also indicated that we had successfully constructed the plasmid. In the subsequent
+              exploration and discussion, we realized that the upstream primers we designed for sequencing were bound to
+              the His-Tag before pmrA, but we also added His-Tag before the C terminus of Oprf-Sitag- dLBT-LanM in the
+              designed systemic pathway, and the primers could also bind to it. This created the multi-band situation.
+              After realizing this problem, we redesigned our primers and selected a more specific fragment design
+              primer. After changing the primer, we successfully solved the problem of multiple bands.</p>
+            <p>The recovery of rare earth elements is of great significance for the protection of the Earth environment
+              and the full utilization of resources, and we are encouraged to make some contributions in this respect by
+              using synthetic biology. We will continue conducting this subject and are willing to do our part for the
+              development of synthetic biology.</p>
+            <h1 class="sectitle title-cover" id="sectitle4">Expression validation</h1>
+            <h2 class="subtitle">
+              3.1 Sensing device
+            </h2>
+            <h3 class="subsubtitle">3.1.1 Design</h3>
+            <p>In order to enable our engineered bacteria to directly sense the rare earth elements in wastewater, we
+              inserted LanM, a lanthanide sensing protein, or LanM along with dLBT, which can capture the rare earth
+              elements, into the membrane protein PmrB in the Pmr system. In addition, we also added a His-tag to the
+              end of the pmrA sequence for later protein purification and identification. At the same time, in order to
+              enhance our expression effect, we selected the potent promoter T7 to initiate the expression of proteins
+              PmrA and PmrB, so as to enhance the expression efficiency of the Pmr two-component system.</p>
+            <h3 class="subsubtitle">3.1.2 Built</h3>
+            <p>We transferred the constructed plasmid into <i>E. coli</i> BL21 and inoculated onto LB plates containing
+              50µg/mL Kana for screening. When the single colony grew, we picked up the colony for PCR verification.
+              After the target band was observed, we mixed the bacterial solution with a 1:1 mixture of glycerol and
+              water, and the seed was preserved to -80℃ and verified the expression.</p>
+            <h3 class="subsubtitle">3.1.3 Test</h3>
+            <p>We verified that our plasmid was successfully transferred to BL21 by colony PCR. The specific method is
+              to culture the selected single colony of <i>E. coli</i> in a shake flask containing 1ml liquid LB with
+              Kana, and conduct PCR verification after the bacteria is amplified for avoiding PCR failure caused by the
+              engineering bacterium concentration is too low, or PCR success but strain amplification failure cases.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig6.png" alt="" class="normimg"
+              style="width: 80%">
+            <i class="imgexplain">Fig. 6. The PCR of PmrL, PmrFP, GolSL and GolSFP colonies all had bright and correct
+              bands, which proved that the transformation was successful</i>
+            <p> </p>
+            <p>After colony PCR identified bright and correct bands, we preserved them for expanded culture and
+              induction of expression. Firstly, we expanded the number of bacteria in the liquid LB medium containing
+              Kana. When the OD<sub>600</sub> of medium reached 0.6-0.8, we added IPTG and Tb<sup>3+</sup> into PmrL and
+              PmrFP system for induction and expression, and then cultured them for 13h. After centrifugation, the cells
+              were treated with PBS buffer and broken by ultrasound. After 1h of low-temperature centrifugation at 12000
+              rpm, we added TDSET buffer to obtain membrane protein solution , and then SDS-PAGE was performed to test.
+              Finally, we successfully detected the target band of membrane protein PmrB at 38kDa.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig7.png" alt="" class="normimg"
+              style="width: 35%">
+            <i class="imgexplain">Fig. 7. After PmrL induction and culture, membrane protein was extracted for SDS-PAGE
+              verification. Compared with the control group without induction, there were clear bands at about 38kDa to
+              show PmrB successful expression</i>
+            <p> </p>
+            <p>In addition to SDS-PAGE verification of membrane proteins, we also tried to purify and verify PmrA
+              proteins in cells. After the engineering bacteria were expanded and induced to express, we centrifuged the
+              samples and broke cells. Then we extracted and purified proteins by nickel column, using SDS-PAGE to
+              determine whether there were target products. Finally, we successfully observed the target protein band on
+              the gel at 26.8kDa. But the color was light and the concentration was low. </p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig8.png" alt="" class="normimg"
+              style="width: 40%">
+            <i class="imgexplain">Fig. 8. After purifying of PmrL by nickel column, SDS-PAGE verification showed that
+              there was a band at 25-30kDa that was significantly different from that of throughflow and impurity
+              washing, which confirmed that PmrA was expressed in cells</i>
+            <p> </p>
+            <p>For the GolS system, after obtaining the bright and correct bands identified by colony PCR, we preserved
+              them, cultured them and induced the expression. Firstly, we expanded the number of bacteria in liquid LB
+              containing Kana. When the OD<sub>600</sub> reached 0.6-0.8, IPTG and Cu<sup>2+</sup> were added to GolSL
+              and GolSFP systems for induction, and then cultured them for 13h. We centrifuged the samples and broke
+              cells. Then we extracted and purified proteins by nickel column, using SDS-PAGE to determine whether there
+              were target products. Finally, we detected that the target band was observed at 17.8kDa where GolS was
+              located.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig9.png" alt="" class="normimg"
+              style="width: 70%">
+            <i class="imgexplain">Fig. 9. After purifying of GolSFP by nickel column, SDS-PAGE verification showed that
+              there was a band at 15-20 kDa that were significantly different from that of throughflow and impurity
+              washing, which confirmed that GolS was expressed in cells</i>
+            <p></p>
+            <h3 class="subsubtitle">3.1.4 Learn</h3>
+            <p>After SDS-PAGE, we successfully observed the target band of PmrB protein at 38kDa, but the band of PmrA
+              was light in color and low in concentration. After analysis, we believe that PmrA may be phosphorylated by
+              PmrB in the cell then activating PmrC, which caused PmrA to be decomposed and recycled by the cell,
+              leading to the low concentration of PmrA in the cell. However, due to the characteristics of Pmr system,
+              we can further prove the expression of PmrA by the expression of capture part.</p>
+            <h2 class="subtitle">
+              3.2 Capture device
+            </h2>
+            <h3 class="subsubtitle">3.2.1 Design</h3>
+            <p>In order to enable our engineering bacteria to directly capture lanthanide elements in wastewater, we
+              used Oprf, an anchor protein, to fix our composite protein on the outer side of the cell membrane. At the
+              same time, to facilitate our subsequent recovery of REEs, we added Si-tag after Oprf to enable it to
+              absorb on the silica column. Finally, LanM or the fusion protein LanM and dLBT are responsible for the
+              adsorption of lanthanide elements. In addition, we also added a His-tag to the C-terminus of Oprf to
+              facilitate the identification of whether the protein was successfully anchored on the cell surface.</p>
+            <h3 class="subsubtitle">3.2.2 Built</h3>
+            <p>We transferred the constructed plasmids into <i>E. coli</i> BL21 and inoculated it onto LB plates
+              containing 50µg/mL Kana for screening. When the single colony grew, we picked up the colony for PCR
+              verification. After the target band was observed, we mixed the bacterial solution with a 1:1 mixture of
+              glycerol and water, and the seed was preserved to -80℃ and verified the expression.</p>
+            <h3 class="subsubtitle">3.2.3 Test</h3>
+            <p>3.2.3.1 Validation of membrane protein expression</p>
+            <p>After colony PCR identifies bright and correct bands, we preserved the engineering bacteria for expanded
+              culture and induction of expression. The engineered bacteria of the four pathways were firstly inoculated
+              in LB liquid medium containing Kana for expansion culture. When the OD<sub>600</sub> of medium reached
+              0.6-0.8, we added IPTG and rare earth ions into PmrL and PmrFP system for induction. We tried to add Tb,
+              Sc, Ce, La and Yb to induce and we observed the expression. We added an appropriate amount of IPTG and
+              Cu<sup>2+</sup> to GolSL/GolSFP to induce the expression. After 13 hours of incubation, we took
+              appropriate amount of bacterial solution to extract membrane protein, and used SDS-PAGE for verification.
+              Finally, we successfully observed the correct band of target protein at 63kDa. At the same time, we found
+              that the effects of expression of PmrL and PmrFP system were best when Tb<sup>3+</sup> was used for
+              induction, so Tb<sup>3+</sup> was used for induction in subsequent experiments.</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig10-1.png" alt=""
+                    class="normimg" style="width: 120%;">
+                </div>
+                <div class="col-6">
+                  <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig10-2.png" alt=""
+                    class="normimg" style="width: 85%;">
+                </div>
+              </div>
+            </div>
+            <i class="imgexplain">Fig. 10. The left figure shows that PmrL was induced by Tb, Sc, Ce, La, Yb
+              respectively and SDS-PAGE result of each membrane proteins. It can be seen that there is clear band at
+              63kDa, which can verify its successful expression. </i>
+            <i class="imgexplain"> The right figure shows that PmrFP was induced by Tb, Sc, La respectively and SDS-PAGE
+              result of each membrane proteins. It can be seen that there is clear band at 63kDa, which can verify its
+              successful expression.</i>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig11-1.png" alt=""
+                    class="normimg" style="width: 70%;">
+                </div>
+                <div class="col-6">
+                  <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig11-2.png" alt=""
+                    class="normimg" style="width: 120%;">
+                </div>
+              </div>
+            </div>
+            <i class="imgexplain">Fig. 11. The left figure shows the membrane protein of GolSL extracted after induction
+              for SDS-PAGE verification. Compared with the control group without induction, it can be seen that there is
+              clear band at 63kDa to judge its successful expression;</i>
+            <i class="imgexplain"> The right figure shows the membrane protein of GolSFP extracted after induction for
+              SDS-PAGE verification. Compared with the control group without induction, it can be seen that there is
+              clear band at 63kDa to judge its successful expression</i>
+            <p></p>
+            <p>3.2.3.2 Verification of Si-tag adsorption</p>
+            <p>After determining the successful expression of our capture part, we tried to test the adsorption capacity
+              of engineered bacteria using a column filled with silica, so as to verify whether our Si-tag could work
+              properly and achieve our expected goal. After induction , we added the bacteria solution to the silica
+              column balanced with Tris buffer and incubated it for 6h. During this period, we took 2ml of the effluent
+              every 1h to measure its OD<sub>600</sub> value, so as to obtain the change of the concentration of the
+              bacterial solution and verify the ability of Si-tag adsorption.</p>
+            <p>Considering that the relative surface area of fine sand is large, we first tried to fill our
+              chromatographic column with fine sand. After many attempts, we found that although the relative surface
+              area of fine sand is large, more bacteria will be absorbed on the silica chromatographic column through
+              physical adsorption. Even the control group that has not been induced to express has a high adsorption
+              rate, and it is difficult to determine our real adsorption situation. In view of this situation, we
+              replaced the coarse sand with a larger diameter for the adsorption experiment. After the fine sand was
+              replaced with coarse sand, the experimental effect was significantly improved. The adsorption of the
+              control group and the experimental group was significantly different, but the adsorption effect of the
+              experimental group did not meet our expectations. After our discussion, we found that the roughness of the
+              coarse sand surface may also affect the adsorption of engineering bacteria, so we used a variety of coarse
+              sand with different roughness but almost the same diameter to fill our chromatographic column for
+              adsorption experiments. After many attempts, gratifying results have been achieved, among which the
+              adsorption rate of the experimental group using the roughest coarse sand reached 89%, meeting our
+              expectations.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig12.png" alt="" class="normimg">
+            <i class="imgexplain">Fig. 12. OD value of PmrL absorbed by coarse sand. The red is the control group, and
+              the black is PmrL. It can be seen that the OD value decreased significantly after 6 hours, which can prove
+              that the adsorption capacity of Si tag is very high</i>
+            <p> </p>
+            <p>3.2.3.3 Verification of adsorption capacity of rare earth elements</p>
+            <p>After confirming that all other parts of the engineered bacteria work effectively, we need to measure the
+              ability of the fusion protein to absorb REEs. We treated the induced bacterial solution with MES buffer,
+              so as to obtain the experimental system to absorb rare earth ions. Subsequently, we added an appropriate
+              number of rare earth ions to the adsorption system and incubated at 100rpm,30℃ for 2h before
+              centrifugation. Then, we determined the concentration of rare earth ions in the supernatant by ICP-OES. We
+              added Tb<sup>3+</sup> firstly to test the REEs adsorption of the engineering bacteria of the four
+              pathways. After several attempts, the engineered bacteria of our PmrL system pathway got an optimal
+              outcome--the averaged Tb<sup>3+</sup> adsorption efficiency was 84%.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig13.png" alt="" class="normimg">
+            <i class="imgexplain">Fig. 13. The Tb<sup>3+</sup> adsorption of PmrL, PmrFP, GolSL, GolSFP</i>
+            <p> </p>
+            <p>Due to time limitation, we chose the engineering bacteria of PmrL system pathway to conduct following
+              experiments. After verifying the engineered bacteria's ability of absorbing REEs, we tried adding
+              different kinds of REEs to test the adsorption rate of our target ions of different REEs.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/proof-img/f14.jpg" alt="" class="normimg">
+            <i class="imgexplain">Fig. 14. The efficiency of PmrL absorbing La,Ce,Sm,Nd,Eu,Y,Gd,Sc</i>
+            <p> </p>
+            <p>After successfully verifying the adsorption capacity of our engineering bacteria in the buffer liquid
+              system, we tried applying our engineering bacteria to practice. We used MES buffer solution to treat the
+              bacterial solution that had been induced, and then added it to industrial wastewater rich in rare earth
+              elements and adjusted pH，incubating at 100 rpm, 30℃ for 2h before centrifugation. We used ICP-OES to
+              determine the concentration of rare earth ions and the average adsorption of Sm<sup>3+</sup> was up to
+              93%.</p>
+            <img src="https://static.igem.wiki/teams/4468/wiki/title/engineering/fig15.png" alt="" class="normimg">
+            <i class="imgexplain">Fig. 15. Different REEs adsorption of PmrL system in industrial wastewater rich in
+              REEs with different pH</i>
+            <p> </p>
+            <h3 class="subsubtitle">3.2.4 Learn</h3>
+            <p>The SDS-PAGE test confirmed that there was a correct band of the capture protein at 63kDa. At the same
+              time, the immunofluorescence labeling also enabled us to successfully confirm that the capture protein was
+              in the correct position —outside the cell membrane. The engineering bacteria could also absorb on the
+              silicon column and be continuously recycled. We also achieved the expected effect on the determination of
+              the adsorption capacity of REEs. These all confirmed that the four system pathways we constructed were
+              successfully expressed. Finally, we also put the engineering bacteria into practice and added them to the
+              wastewater rich in rare earth ions, and achieved success. Through this series of experiments, we have
+              successfully constructed an engineering <i>E. coli</i> that can not only efficiently absorb REEs, but also
+              recover REEs. However, there are still some parts of our project that can be optimized. We believe that
+              even after the iGEM competition, we will continue to promote our project and make efforts to use synthetic
+              biology to improve the world environment and make rational use of resources.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
   
