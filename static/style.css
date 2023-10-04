@@ -1,7 +1,6 @@
-body { padding-top: 56px; }
 .left-aligned { margin-left: auto; }
 .bg-dark { background-color: #343a40 !important; }
-.bg-hero { background-color: #45b06cff; }
+.bg-hero { background-color: #7952b3; }
 
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
@@ -16,3 +15,475 @@ body { padding-top: 56px; }
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
 footer a:hover { color: white; text-decoration: underline; }
+
+/* main content*/
+.catalogue
+/*目录*/{
+    float: left;
+    width: 240px;
+    position: sticky;
+    top: 80px;
+    background-color: #FEB774;
+    color: #0B88A0;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+@font-face {
+	font-family:Silkscreen;
+	src: url(static/Silkscreen-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mukta;
+    src: url(static/Mukta-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(static/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin_Sans;
+    src: url(static/JosefinSans-Regular.ttf);
+}
+.catalogue h4{
+    text-indent: 2em;
+}
+
+.catalogue a{
+    color: black;
+}
+
+.main_content {
+    margin-left: 220px;
+    font-family: var(--bs-font-sans-serif);
+}
+
+.main_content p{
+    font-size: 16px;
+}
+
+.clearfix {
+    clear: right;
+}
+
+/*清除浮动*/
+
+.my_text {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/*表格格式*/
+table {
+    text-align: center;
+    margin: auto;
+}
+
+.title-cover {
+    /*清除nav影响*/
+    position: relative;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.html{
+    scroll-padding-top: 60px;
+}
+
+.sectitle { 
+    /*目录标题字体*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.graph {/*子标题上间距*/
+    margin-top: 5px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    padding: 0;
+    padding-bottom: 56px;
+}
+
+
+.subtitle {
+    /*子标题字体*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.references{
+   font-size: 25px;
+    margin: 10px;
+    margin-top: 30px;
+    text-indent: 1em; 
+}
+
+.references i{
+    font-size:14px;
+    display: block!important
+}
+/*botton style*/
+#circle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.btn-container {
+  position: relative;
+}
+
+.button {
+  border: 0;
+  width: 150px;
+  margin-left: 40px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 400;
+  margin: 2px;
+  color: white;
+  background: #5f55af;
+  padding: 15px 10px 15px 10px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #f0e1b0 50%, #02b1ad 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 2s ease;
+}
+
+.button:hover {
+  background-position: left bottom;
+  cursor: pointer;
+}
+
+/*li-style*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.box {
+    width: 300px;
+    height: 300px;
+}
+
+ul li::marker{
+  color: black;
+}
+
+.li-style {
+    background-color: #02b1ad !important;
+    border-color: #02b1ad !important;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-style: 'Ubuntu', sans-serif !important;
+}
+
+
+.li-style a{
+    color: white;
+    text-decoration: none;
+}
+.li-style::marker{
+  color: black;
+}
+.li-style a:hover{
+  text-decoration: underline;
+}
+
+/* loading animate*/
+
+#bgcvideo{
+    position: fixed;
+    right: 0px;  
+    bottom: 0px;  
+    /*min-width: 100%;  
+    min-height: 100%;*/  
+    height: 100%;  
+    width: 100%;
+    margin: 0%;
+    padding: 0%;  
+}
+
+#bgctest{
+    position: fixed;
+    background-color: black;
+    right: 0px;  
+    bottom: 0px;  
+    /*min-width: 100%;  
+    min-height: 100%;*/  
+    height: 100%;  
+    width: 100%;
+    margin: 0%;
+    padding: 0%;  
+}
+
+/* nav*/
+#cricle {
+            width: 70px;
+            height: 70px;
+            right: 0px;
+            position: fixed;
+            background-color: #02b1ad;
+            margin:0px;
+            z-index: 99;
+        }
+
+#cricle:hover{
+    cursor: pointer;
+}
+.home 
+{
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    background: url(https://static.igem.wiki/teams/4468/wiki/miner.png);
+    background-size: cover;
+    position: fixed;
+    margin: 4px;
+    z-index: 99;
+}
+
+        #cricle1 {
+            width: 550px;
+            height: 550px;
+            background-color: #222;
+            border-radius: 50%;
+            right: -100px;
+            top: -100px;
+            float: left;
+            z-index: 7;
+            display: none;
+            position: fixed;
+        }
+
+        #cricle2 {
+            width: 400px;
+            height: 400px;
+            background-color: #02b1ad;
+            border-radius: 50%;
+            left: 250px;
+            top: 150px;
+            float: left;
+            z-index: 7;
+            display: none;
+            position: fixed;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        #cover {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+            height: 100%;
+            filter: alpha(opacity=80);
+            /*设置透明度为60%*/
+            opacity: 0.9;
+            /*非IE浏览器下设置透明度为60%*/
+            display: none;
+            z-Index: 6;
+            position: fixed;
+        }
+
+        .height {
+            width: 50px;
+            height: 2000px;
+        }
+
+        .cala1 {
+            /*主导航栏*/
+            height: 200px;
+            width: 200px;
+            top: 150px;
+            left: 150px;
+            position: relative;
+        }
+
+        .cala1 a{
+            text-decoration: none;
+            color: white;
+        }
+        #cata21 {
+            /*副导航栏1*/
+            margin: auto;
+            position: absolute;
+            top: 50%;   
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);   
+            -moz-transform: translate(-50%, -50%);   
+            -ms-transform: translate(-50%, -50%);   
+            -o-transform: translate(-50%, -50%);   
+            transform: translate(-50%, -50%);
+            z-index: 10;   
+            opacity: 0.1;
+        }
+
+
+        #cata22 {
+            /*副导航栏1*/
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);   
+            -moz-transform: translate(-50%, -50%);   
+            -ms-transform: translate(-50%, -50%);   
+            -o-transform: translate(-50%, -50%);   
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            z-index: 11;
+        }
+
+        #cata23 {
+            /*副导航栏1*/
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);   
+            -moz-transform: translate(-50%, -50%);   
+            -ms-transform: translate(-50%, -50%);   
+            -o-transform: translate(-50%, -50%);   
+            transform: translate(-50%, -50%);
+            z-index: 12;
+        }
+
+        #cata24 {
+            /*副导航栏1*/
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);   
+            -moz-transform: translate(-50%, -50%);   
+            -ms-transform: translate(-50%, -50%);   
+            -o-transform: translate(-50%, -50%);   
+            transform: translate(-50%, -50%);
+            z-index: 13;
+        }
+
+        #cata25 {
+            /*副导航栏1*/
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);   
+            -moz-transform: translate(-50%, -50%);   
+            -ms-transform: translate(-50%, -50%);   
+            -o-transform: translate(-50%, -50%);   
+            transform: translate(-50%, -50%);
+            z-index: 14;
+        }
+
+        #titlebg{
+        width: 100%;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        z-index: 100;
+        background-position: center center;
+        }
+
+/*子子标题和图片*/
+
+.subsubtitle {
+    /*子标题字体*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 5px;
+    text-indent: 1em;
+}
+
+.imgexplain{
+    text-align: center;
+    font-size: small;
+    display: block;
+    margin: 0, auto;
+}
+
+.normimg{
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    object-fit: cover;
+    display: block;
+    max-height: 1000px;
+}
+
+.title-margin{
+    width: 100%;
+    height: 40px;
+}
+
+.normim{
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    object-fit: cover;
+    display: block;
+}
+
+.references i{
+      display:block;
+}
+
+.footer{
+            width: 100%;
+            height: 450px;
+            background: url(https://static.igem.wiki/teams/4468/wiki/fotter.png);
+            background-size: cover;
+            background-position: center center;
+        }
+
+.rei{
+    font-size: 14px!important;
+    display: block!important;
+}
+.footerdivide{
+    width: auto;
+    height: 40px;
+}
+
+.hpvideo{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+#herfsvg{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+}
+
