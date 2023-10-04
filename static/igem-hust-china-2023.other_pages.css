@@ -2466,8 +2466,8 @@ li {
   background-position: 50%;
   background-repeat: repeat;
   background-size: 100% 2000%;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .heading-18, .heading-19, .heading-20 {
