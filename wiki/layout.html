@@ -10,37 +10,66 @@
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
 
+    <!-- JQuery Js -->
+    <script type="text/javascript" src="static/jquery.js")}}" ></script>
+    <script type="text/javascript" src="static/jqueryrotate.js")}}" ></script>
+
+
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
 
-    <title>{% block title %}{% endblock %} | HUST-China - iGEM 2023</title>
+    <!-- Font style-->
+    
+    <title>{% block title %}{% endblock %} | HUST-China - iGEM 2022</title>
+    <style>
+      @font-face {
+	font-family:Silkscreen;
+	src: url(static/Silkscreen-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(static/Montserrat-Regular.ttf);
+}
 
-</head>
-<body>
+@font-face {
+    font-family: Mukta;
+    src: url(static/Mukta-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(static/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin_Sans;
+    src: url(static/JosefinSans-Regular.ttf);
+}
+
+      </style>
+    
+  </head>
+
+  <body>
   <!-- Navigation -->
   {% include 'menu.html' %}
-
   <!-- Header -->
-  <header class="bg-hero py-5 mb-5">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
-          <h1 class="display-4 text-white mt-5 mb-2">{{ self.title() }}</h1>
-	        <p class="lead mb-5 text-white-50">{% block lead %}{% endblock %}</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
+    {% block lead %}{% endblock %}
   <!-- Page Content -->
   <div class="container">
     {% block page_content %}{% endblock %}
+    <!--  Video  -->
   </div>
 
   <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
   {% include 'footer.html' %}
 
+  <!-- Wiki Tools: Teams are allowed to remove it -->
+  {% include 'wiki-tools.html' %}
+
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
-</body>
+  </body>
+  
 </html>
+
