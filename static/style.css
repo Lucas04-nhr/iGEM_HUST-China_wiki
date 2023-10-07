@@ -435,7 +435,11 @@ ul li::marker{
 
 .normimg{
     width: 60%;
-    
+    height: auto;
+    margin: 20px auto;
+    object-fit: cover;
+    display: block;
+    max-height: 1000px;
 }
 
 .norming1{
