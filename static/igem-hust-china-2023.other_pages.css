@@ -942,7 +942,7 @@ li {
   height: auto;
   min-height: auto;
   color: #fff;
-  background-color: #cfd675;
+  background-color: rgb(139, 223, 171);
   border-radius: 10px;
   flex-direction: column;
   flex: none;
@@ -1117,13 +1117,13 @@ li {
 }
 
 .menu-button {
-  background-color: #ced55b;
+  background-color: rgb(139, 223, 171);
   border-radius: 0;
   margin-right: -20px;
 }
 
 .menu-button.w--open {
-  background-color: #cfd675;
+  background-color: rgb(139, 223, 171);
   border-radius: 0;
   align-self: flex-start;
   margin-top: 0;
