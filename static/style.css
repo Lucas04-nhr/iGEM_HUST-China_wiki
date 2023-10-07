@@ -435,13 +435,16 @@ ul li::marker{
 
 .normimg{
     width: 60%;
+    
+}
+
+.norming1{
     height: auto;
     margin: 20px auto;
     object-fit: cover;
     display: block;
     max-height: 1000px;
 }
-
 .title-margin{
     width: 100%;
     height: 40px;
