@@ -41,7 +41,7 @@
       <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
         <ul role="list" class="nav-menu-two w-list-unstyled">
           <li>
-            <a href="index.html" target="_blank" aria-current="page" class="nav-link w--current">Home</a>
+            <a href="index.html" target="_self" aria-current="page" class="nav-link w--current">Home</a>
           </li>
           <li>
             <div data-hover="true" data-delay="0" class="nav-dropdown w-dropdown">
@@ -68,13 +68,13 @@
                 <div class="text-block-7">Wet Lab</div>
               </div>
               <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
-                <a href="contributions.html" class="nav-dropdown-link w-dropdown-link">Design</a>
+                <a href="{{ url_for('pages', page='design') }}" class="nav-dropdown-link w-dropdown-link">Design</a>
                 <a href="{{ url_for('pages', page='engineering') }}"
                   class="nav-dropdown-link w-dropdown-link">Engineering</a>
-                <a href="protocol.html" class="nav-dropdown-link w-dropdown-link">Protocol</a>
+                <a href="{{ url_for('pages', page='protocol') }}" class="nav-dropdown-link w-dropdown-link">Protocol</a>
                 <a href="{{ url_for('pages', page='results') }}" class="nav-dropdown-link w-dropdown-link">Results</a>
                 <a href="{{ url_for('pages', page='notebook') }}" class="nav-dropdown-link w-dropdown-link">Notebook</a>
-                <a href="parts.html" class="nav-dropdown-link w-dropdown-link">Parts</a>
+                <a href="{{ url_for('pages', page='parts') }}" class="nav-dropdown-link w-dropdown-link">Parts</a>
               </nav>
             </div>
           </li>
@@ -106,9 +106,11 @@
               <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
                 <a href="{{ url_for('pages', page='contribution') }}"
                   class="nav-dropdown-link w-dropdown-link">Contribution</a>
-                <a href="members.html" class="nav-dropdown-link w-dropdown-link">Members</a>
-                <a href="collaboration.html" class="nav-dropdown-link w-dropdown-link">Collaboration</a>
-                <a href="partnership.html" class="nav-dropdown-link w-dropdown-link">Partnership</a>
+                <a href="{{ url_for('pages', page='members') }}" class="nav-dropdown-link w-dropdown-link">Members</a>
+                <a href="{{ url_for('pages', page='collaboration') }}"
+                  class="nav-dropdown-link w-dropdown-link">Collaboration</a>
+                <a href="{{ url_for('pages', page='partnership') }}"
+                  class="nav-dropdown-link w-dropdown-link">Partnership</a>
                 <a href="{{ url_for('pages', page='attributions') }}"
                   class="nav-dropdown-link w-dropdown-link">Attributions</a>
               </nav>
@@ -120,7 +122,7 @@
         <div class="icon w-icon-nav-menu"></div>
       </div>
     </div>
-  </div>
+</div>
 
   <style>
     #subtitle1:target {
