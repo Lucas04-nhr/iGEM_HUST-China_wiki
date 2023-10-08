@@ -857,7 +857,7 @@
 }
 
 h1 {
-  background-image: url('../images/logo-5-1.png');
+  background-image: url('https://2023.igem.wiki/hust-china/images/logo-5-1.png');
 }
 
 li {
@@ -2057,7 +2057,7 @@ li {
 
 .text-block-3 {
   width: 100%;
-  background-image: url('../images/logo-5-1.png');
+  background-image: url('https://2023.igem.wiki/hust-china/images/logo-5-1.png');
   background-position: 50%;
   background-repeat: repeat;
   background-size: cover;
@@ -2346,7 +2346,7 @@ li {
 }
 
 .gallery-feature {
-  background-image: url('../images/');
+  background-image: none;
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -2397,7 +2397,7 @@ li {
   height: 500px;
   text-align: center;
   object-fit: none;
-  background-image: url('../images/logo-5-1.png');
+  background-image: url('https://2023.igem.wiki/hust-china/images/logo-5-1.png');
   background-position: 50%;
   background-size: 900px 500px;
   font-size: 100px;
@@ -3483,7 +3483,7 @@ li {
   }
 
   .body-2 {
-    background-image: url('../images/backg.png');
+    background-image: url('https://2023.igem.wiki/hust-china/images/backg.png');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -4548,21 +4548,21 @@ li {
 
 @font-face {
   font-family: 'Americantypewriter';
-  src: url('../fonts/AmericanTypewriter.ttc') format('undefined'), url('../fonts/AmericanTypewriter.ttc') format('undefined');
+  src: url('/static/fonts/AmericanTypewriter.ttc') format('undefined'), url('../fonts/AmericanTypewriter.ttc') format('undefined');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Comic Sans Ms';
-  src: url('../fonts/Comic-Sans-MS.ttf') format('truetype');
+  src: url('/static/fonts/Comic-Sans-MS.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Comic Sans Ms';
-  src: url('../fonts/Comic-Sans-MS-Bold.ttf') format('truetype');
+  src: url('/static/fonts/Comic-Sans-MS-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
