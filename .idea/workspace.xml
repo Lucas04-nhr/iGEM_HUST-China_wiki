@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d82e4ea-6369-44b1-96c6-2e0bd6225e83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/static/webflow.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/webflow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/igem-hust-china-2023.webflow.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/igem-hust-china-2023.webflow.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <workItem from="1696210324818" duration="2946000" />
       <workItem from="1696246049212" duration="1316000" />
       <workItem from="1696674154994" duration="1922000" />
-      <workItem from="1696757773271" duration="6379000" />
+      <workItem from="1696757773271" duration="6758000" />
     </task>
     <servers />
   </component>
