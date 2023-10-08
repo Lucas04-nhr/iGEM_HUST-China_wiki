@@ -857,7 +857,7 @@
 }
 
 h1 {
-  background-image: url('../images/logo-5-1.png');
+  background-image: url('https://static.igem.wiki/teams/4595/wiki/home/logo-5-1.png');
 }
 
 li {
@@ -2032,7 +2032,7 @@ li {
 
 .text-block-3 {
   width: 100%;
-  background-image: url('../images/logo-5-1.png');
+  background-image: url('https://static.igem.wiki/teams/4595/wiki/home/logo-5-1.png');
   background-position: 50%;
   background-repeat: repeat;
   background-size: cover;
@@ -2321,7 +2321,7 @@ li {
 }
 
 .gallery-feature {
-  background-image: url('../images/');
+  background-image: none;
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -2372,7 +2372,7 @@ li {
   height: 500px;
   text-align: center;
   object-fit: none;
-  background-image: url('../images/logo-5-1.png');
+  background-image: url('https://static.igem.wiki/teams/4595/wiki/home/logo-5-1.png');
   background-position: 50%;
   background-size: 900px 500px;
   font-size: 100px;
@@ -2462,7 +2462,7 @@ li {
 }
 
 .body {
-  background-image: url('../images/backg2.png');
+  background-image: url('https://static.igem.wiki/teams/4595/wiki/home/bg.png');
   background-position: 50%;
   background-repeat: repeat;
   background-size: 100% 2000%;
@@ -3162,7 +3162,7 @@ li {
   }
 
   .body-2 {
-    background-image: url('../images/backg.png');
+    background-image: url('https://static.igem.wiki/teams/4595/wiki/home/bg.png');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
