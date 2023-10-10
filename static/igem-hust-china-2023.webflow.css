@@ -3268,6 +3268,13 @@ li {
   display: flex;
 }
 
+.image-25 {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    margin-left: 0;
+}
+
 .grid {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -3615,6 +3622,13 @@ li {
     width: 100%;
     height: 720px;
     margin-left: 0%;
+  }
+
+  .image-25 {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    margin-left: 0;
   }
 
   .grid {
@@ -3985,6 +3999,10 @@ li {
   }
 
   .video-block {
+    height: 540px;
+  }
+
+  .image-25 {
     height: 540px;
   }
 }
@@ -4480,6 +4498,10 @@ li {
   }
 
   .video-block {
+    height: 320px;
+  }
+
+  .image-25 {
     height: 320px;
   }
 }
