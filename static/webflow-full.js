@@ -11516,12 +11516,12 @@
         }
         if (!ixSession.active) {
             console.log(document.getElementById("123333333"))
-          // store.dispatch((0, _IX2EngineActions.sessionInitialized)({
-          //   hasBoundaryNodes: Boolean(document.querySelector(BOUNDARY_SELECTOR)),
-          //   reducedMotion: (
-          //     // $FlowFixMe - Remove this attribute on beta launch
-          //     document.getElementById("123333333").hasAttribute("data-wf-ix-vacation") && window.matchMedia("(prefers-reduced-motion)").matches
-          //   )
+          store.dispatch((0, _IX2EngineActions.sessionInitialized)({
+            hasBoundaryNodes: Boolean(document.querySelector(BOUNDARY_SELECTOR)),
+            reducedMotion: (
+              // $FlowFixMe - Remove this attribute on beta launch
+              document.getElementById("123333333").hasAttribute("data-wf-ix-vacation") && window.matchMedia("(prefers-reduced-motion)").matches
+            )
                   if (!ixSession.active) {
             console.log(document.getElementById("123333333"))
           store.dispatch((0, _IX2EngineActions.sessionInitialized)({
