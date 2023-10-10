@@ -11519,8 +11519,7 @@
             hasBoundaryNodes: Boolean(document.querySelector(BOUNDARY_SELECTOR)),
             reducedMotion: (
               // $FlowFixMe - Remove this attribute on beta launch
-              // document.body.hasAttribute("data-wf-ix-vacation") && window.matchMedia("(prefers-reduced-motion)").matches
-              document.getElementById("videoframe").hasAttribute("data-wf-ix-vacation") && window.matchMedia("(prefers-reduced-motion)").matches
+              document.body.hasAttribute("data-wf-ix-vacation") && window.matchMedia("(prefers-reduced-motion)").matches
             )
           }));
           if (allowEvents) {
