@@ -11515,6 +11515,7 @@
           store.dispatch((0, _IX2EngineActions.rawDataImported)(rawData));
         }
         if (!ixSession.active) {
+          console.log(document.getElementById("videoframe"))
           store.dispatch((0, _IX2EngineActions.sessionInitialized)({
             hasBoundaryNodes: Boolean(document.querySelector(BOUNDARY_SELECTOR)),
             reducedMotion: (
