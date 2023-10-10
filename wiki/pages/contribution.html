@@ -231,11 +231,11 @@
                   <li><a href="#list1">2.1 Cyanobacteria</a></li>
                   <li><a href="#list2">2.2 Shewanella</a> </li>
                 </ul>
-                <li><a href="#sectitle3">Lab Safety</a></li>
+                <li><a href="#sectitle3">Wet lab experience</a></li>
                 <ul>
                   <li><a href="#list3">3.1 genetic engineering</a></li>
                   <li><a href="#list4">3.2 engineered bacteria</a></li>
-                  <li><a href="#sectitle4">Lab Safety</a></li>
+                  <li><a href="#sectitle4">Hardware</a></li>
                 </ul>
             </ul>
         </div>
@@ -245,44 +245,38 @@
             <div class="content col-lg-10">
                 <article>
                    <h1 class="sectitle title-cover" id="sectitle1">Introduction</h1>
-                        <p>Our team consistently believes that safety is a prerequisite and guarantee for the success of a project. Therefore, awareness of safety is implemented throughout the entire project. Our emphasis on safety is evident in the research into production environments, and the assurance of experimental safety.</p>
-                    <h1 class="sectitle title-cover" id="sectitle2">Project Safety</h1>
-                    <h2 class="subtitle" id="list1">   Microbiological Safety</h2>
-                        <p>a)	According to ATCC, the chassis organisms we have selected, such as Synechocystis sp. PCC 6803 and Shewanella oneidensis MR-1, can be used in a BSL 1 laboratory. The general principles of microbiological and biomedical laboratory biosafety specify that BSL 1 is appropriate for microorganisms known to have no pathogenic effects on healthy adults.</p>
-                        <img src="https://static.igem.wiki/teams/4595/wiki/safety/safety4-1.png" alt="" class="normimg" >
-                        <i class="imgexplain">Fig.1. Microbiological Safety(MR-1) and Microbiological Safety(PCC 6803)</i>
-                        <p>b)	E.coli Top10 and E.coli WM3064 are used in our experimental processes. Top10 is a preferred choice for cloning vectors, while WM3064 serves as a transfer vector tool. Our use of the bacteria strictly adheres to experimental operating procedures and laboratory safety guidelines.</p>
-                        <h2 class="subtitle" id="list2">  Reagents Safety</h2>
-                       <img src="https://static.igem.wiki/teams/4595/wiki/safety/safety3-1.png" alt="" class="normimg">
-<p>All reagents are strictly used, stored in accordance with relevant regulations.</p>
-<h2 class="subtitle" id="list3">   Working Environment Safety</h2>
-                        <p>Waste gases from the hardware are discharged after passing through filter membrane, and the UV lamp is installed at the gas outlet of the thermal power station to prevent the release of engineered bacteria. Used culture media can be sterilized using excess heat from the power plant to prevent the escape of engineered bacteria from residual culture media.</p>
-                    <h1 class="sectitle title-cover" id="sectitle3">Lab Safety</h1>
+                        <p>This year, our team mainly focused on building a system of cyanobacteria and Shewanella to reduce the CO2 emissions from thermal power plants and improve the energy efficiency of fossil fuels, thus mitigating the climate crisis caused by the greenhouse effect. We have not only successfully constructed such a two-bacterium culture system, enabling cyanobacteria to successfully produce lactate and improve the electricity generation capacity of Shewanella, but also built a micro-modular fermenter system  in terms of hardware. In addition, we would like to share some experiences from our wet lab for future iGEM teams to refer to.</p>
+                    <h1 class="sectitle title-cover" id="sectitle2">Parts</h1>
+                    <p>These parts are crucial for gene expression. Our project has registered several components, all of which meet the RFC standardization requirements. Through the combination of the following parts, we try to promote the expression of our target products and the rate of electron transport by increasing the intracellular NADH concentration</p>
+                    <h2 class="subtitle" id="list1"> 2.1 Cyanobacteria</h2>
+                         <h3 class="subsubtitle">2.1.1 Ppsba2-omcs- Tpsbc</h3>
+                        <p>Composed of Ppsba2 and omcs, it is used to express omcs under light conditions to direct excess electrons from plastoquinone (PQ) to photosystem I (PSI) to stimulate cyclic electron transfer (CET). Thus, more ATP is produced and NADH consumption by RET cycle is reduced. Finally, the purpose of increasing intracellular NADH content was achieved</p>
+                        <h3 class="subsubtitle">2.1.2 Pcpc560-ldha-lldP-Tpsbc</h3>
+                        <p>We designed this plasmid and transferred it into Synechocystis PCC6803 to enhance the production of D-lactate and transport the lactate to the extracellular space in time.</p>
+                        <h3 class="subsubtitle">2.1.3 Prbcl-gshA-gshB-Tpsbc</h3>
+                        <p>We designed it to overexpress Gsh, which could make intracellular GSH more abundant and improve the antioxidant capacity of the engineered bacteria, thereby improving the stress resistance of the engineered bacteria to withstand the extreme environment.</p>
+                        <h3 class="subsubtitle">2.1.4 Prbcl-dsup-Tpsbc</h3>
+                        <p>It is responsible for promoting the synthesis of Damage suppressor protein in cells, improving the DNA strength of engineered bacteria, and improving their reproductive activity. Therefor the stress resistance of bacteria can be improved to resist the possible extreme environment in the future.</p>
+                        <h2 class="subtitle" id="list2">2.2 Shewanella</h2>
+                         <h3 class="subsubtitle">2.2.1 Ptac-ycel-pncB-TrrnB T1</h3>
+                        <p>This component is responsible for introducing the NAMN synthesis pathway with Na as a precursor into the engineered bacteria S.oneidensis MR-1, thereby increasing the intracellular NAD+ content. Therefor the intracellular NADH level can be increased, which promoting electron transfer, and thus improving the electrical generation capacity of the engineered bacteria</p>
+                        <h3 class="subsubtitle">2.2.2 Ptac-nadE-nadD-nadM-TrrnB T1</h3>
+                        <p>This component is responsible for introducing a new de novo synthetic NAD+ pathway and enhancing an existing common synthetic pathway in engineered bacteria S.oneidensis MR-1, thereby increasing intracellular NAD+ content and NADH levels. In this way, electron transfer is promoted, and the electricity generation capacity of engineered bacteria is enhanced.</p>
+                        <h3 class="subsubtitle">2.2.3 Ptac-dsup-sodA-oprf-TrrnB T1</h3>
+                        <p>This component is responsible for increasing the extracellular electron transport efficiency of engineered bacteria S.oneidensis MR-1 and enhancing its stress resistance by adjusting the expression efficiency of genes with different RBS.oprf promotes riboflavin entry and exit, thereby improving the extracellular electron transfer efficiency. SodA can reduce intracellular ROS and improve the antioxidant capacity of engineered bacteria. Dsup can improve the DNA strength and reproductive activity of engineered bacteria, so as to improve the stress resistance of bacteria to resist possible extreme environments.</p>
+                    <h1 class="sectitle title-cover" id="sectitle3">Wet lab experience</h1>
                     <h2 class="subtitle" id="list4">   
-                        Biosafety Laws in China
+                        3.1 genetic engineering
                     </h2> 
-                        <p>AAll of our project personnel strictly comply with the Biosafety Law of the People’s Republic of China implemented in 2021.</p>
+                        <p>In the first version of the design, we added the corresponding homologous arm for each fragment so that parts could be joined by homologous recombination. But in our first experimental cycle, we tried to connect components and vectors by homologous recombination. However, after several attempts, we failed to construct our four major plasmids. Considering the large size and complex topology of the constituent fragments of the four plasmids, it is difficult to directly perform homologous recombination. We redesigned the primers and attempted to construct our systemic pathway by restriction enzyme digestion and ligation . Finally, we successfully constructed our four major plasmids.</p>
                     <h2 class="subtitle" id="list5">   
-                       Training
+                      3.2 engineered bacteria
                     </h2>
-                        <p>The personnel in the project have all undergone training on relevant safety guidelines before conducting experiments. They have also participated in centralized training sessions on experimental skills and related precautions.</p>
-                    <h2 class="subtitle" id="list6">
-                        Basic Lab Rules
-                    </h2>
-                        <p>a) Before starting work, it is essential to clearly identify the location and operating procedures of fire extinguishing equipment, electrical switches, and other facilities. Familiarity with emergency response measures and procedures is also necessary.</p>
-<p>
-b) When entering the laboratory, lab coats must be worn, and avoid wearing open shoes. Lab coats should be removed when leaving the laboratory.
-eanliness and orderliness in the laboratory, and promptly clean up or dispose of waste materials.
-</p>
- <p>
- c) When conducting experiments that may pose a risk, appropriate personal protective equipment must be worn as per the situation. This may include wearing safety goggles, face masks, and protective gloves.
- </p>
-<p>
-  d) Smoking, eating, and sleeping are strictly prohibited inside the laboratory.
-  </p>
-<p>
-  e)  Maintain cleanliness and orderliness in the laboratory, and promptly clean up or dispose of waste materials. 
-  </p>                      
+                        <p>This year, we selected Synechocystis PCC6803 and S.oneidensis MR-1, two chassis organisms less common than E.coli, and explored their co-culture systems.</p>
+                                               <p>The growth rate of cyanobacteria largely limits its application on a large scale. Compared to the ultra-fast growth rate of E.coli, cyanobacteria takes 3-5 days to enter the logarithmic growth phase, and their transformation time is 7-10 days. Therefore, when using slower growing chassis strains such as cyanobacteria, experimental arrangements need to be estimated as early as possible. Evaluate the experimental period. Finally, we successfully detected the lactate by HPLC.</p> 
+                                                 <p>Shewanella is similar to E.coli in growth rate, but its transformation needs to be carried out by conjugation, and the transformation is carried out by the defective strain E.coli wm3064. In this step, the ratio and growth state of the two bacteria will greatly affect the success rate of transformation. It is also necessary to have an appropriate arrangement of the experimental time to achieve a more successful transformation result. After the engineered Shevanella strain was successfully obtained, the gene expression of our engineered strain was verified from the NAD+/NADH concentration, and the electricity production capacity  of our engineered strain was effectively demonstrated by the electricity generation experiment </p>
+                                                  <h1 class="sectitle title-cover" id="sectitle4">Hardware</h1>
+                   <p>In the process of design and research, we found that the current synthetic biology related projects, the researcher in synthetic biology sometimes do not have the perfect fermentation engineering, and it is difficult to connect the lab-level results with industrial applications. In the scale-up process before actual production, the fermentation results are often inconsistent with the simple shake flask culture. Therefore, we first tried to design a micro-fermentation system for our project, and then we built a set of micro-fermentation system by investigating the fermentation equipment in pilot and even put into production, reasonably reducing and modularizing it, so that the effect of pilot and even put into production could be simulated in the laboratory. We hope that this miniature modular fermentation system can shorten the distance between synthetic biology and industrial production and promote the application and development of synthetic biology.</p>       
                 </article>
             </div>
         </div>
