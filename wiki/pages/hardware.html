@@ -226,8 +226,9 @@
         <div class="catalogue">
             <h4>CONTENT</h4>
             <ul>
-                <li><a href="#sectitle1">Molecular Experiment</a></li>
-                <li><a href="#sectitle2">Expression Experiment</a></li>
+                <li><a href="#sectitle1">Section 1: The design of our fermenter</a></li>
+                <li><a href="#sectitle2">Section 2: "Family" of modular fermentation units</a></li>
+                <li><a href="#sectitle3">Section 3: Industrialization thoughts</a></li>
             </ul>
         </div>
     <div class="main content">
@@ -237,7 +238,7 @@
 <!--              Article is here-->
               <article>
                  <h1 class="sectitle title-cover" id="sectitle1">
-                   Section 1
+                   Section 1: The design of our fermenter
                  </h1>
 <!--                小标题用h2标签，class不设置，
                     段落用p标签，class不设置，
@@ -246,13 +247,173 @@
                     图注插入用i标签，class设置为imgexplain
                     -->
                 <h2 >
-                  This is a subtitle
+                    A. Overview
                 </h2>
-                <p >
-                  This is a paragraph.
-                  $$\frac{1}{2}$$
+
+                <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image1.png"
+                     class="normimg"
+                     alt="Figure 1 Whole assembly picture">
+                <i class="imgexplain">Figure 1 Whole assembly picture</i>
+                <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image2.png"
+                 class="normimg"
+                 alt="Figure 2 Three view and squint view">
+                  <i class="imgexplain">Figure 2 Three view and squint view</i>
+                <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image3.png"
+                     class="normimg"
+                     alt="Figure 3 Half profile main view">
+                  <i class="imgexplain">Figure 3 Half profile main view</i>
+
+                <p>
+                    To help our Cyanobacteria and Shwanella symbiose and further achieve our goals, we built such a fermenter for cell culture. We formed this complete fermenter with partitions, making it suitable for our Cyanobacteria and Shewanella cultures and easy to split and assemble. From the outside, our fermenter is like a small mushroom that is breaking out of the ground, and we hope to use it to represent new life and the future. At the same time, we have prepared sterilization equipment at the outlet of the tank to ensure that our engineered bacteria will not escape into the environment. We designed such a fermenter to help further improve and complete the experiment.
                 </p>
 
+                <h2>
+                    B. Structure
+                </h2>
+                  <p>
+                      The fermenter innovatively puts forward the idea of "building block" fermenter, through the modular design, improves the operation portability and environmental adaptability of the fermentation system, and customizes the corresponding solutions for different fermentation scenarios to ensure maximum efficiency. The system provides optional modules including: stirring module, defoaming module, temperature control module, air distribution module, pH monitoring module, aerobic/anaerobic module, lightless/lighted module, and monoclonal/synergistic module. Another advantage of the modular design is the cost, which only requires the price of normal 3d printing. After obtaining the whole fermentation model family, the parts can be replaced at will, realizing the completion of industrial simulation at a cheaper price and higher fit.
+                    </p>
+                <h3>
+                    1. Cyanobacteria Part`
+                </h3>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image4.png"
+                     class="normimg"
+                     alt="Figure 4 Main view of the cyanobacteria tank">
+                  <i class="imgexplain">Figure 4 Main view of the cyanobacteria tank</i>
+
+                  <p>
+                      This semi-spherical fermenter is designed specifically to optimize the growth of Cyanobacteria, with a primary focusing on increasing their light receiving area but also ensure its volume. The tank boasts a total height of 15.5 cm, and we employed transparent materials in order to enhance both light efficiency and transmittance, thereby promoting better photosynthesis by the Cyanobacteria. To further support optimal culture conditions for these organisms, we included a spiral tube for temperature exchange, which allows for the inflow of thermal wastewater or thermal waste gas generated from power plants to maintain the desired temperature within the fermenter. We also prepared another four small holes on the top of the tank, one for adding culture medium，one for adding waterproof exhaust valve to balance the air pressure in the tank,one for placing temperature sensor and another for placing PH sensor. In consideration of the need to connect the filter membrane、flow switch and anode tank beneath the fermenter, we incorporated external threads at its base. These threads serve not only to facilitate this connection but also prevent potential water leakage.
+                    </p>
+
+                    <h3>
+                        2. Shewanella Anode Tank
+                    </h3>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image5.png"
+                     class="normimg"
+                     alt="Figure 5 Main view of the Shewanella anode tank">
+                  <i class="imgexplain">Figure 5 Main view of the Shewanella anode tank</i>
+
+                  <p>
+                      This anode pot, measuring 8.2 cm in height, is utilized for the cultivation of Shewanella.The upper surface of the tank features two circular openings - one serves as a connection to the Cyanobacteria culture tank above, while the smaller one is designated for the anodal elrctrode, and left the corresponding inner thread for the anode cover. The remaining openings are concentrated on one side of the tank, with the large threaded mouth serving as the point of connection for the cathode tank,the 4 cm diameter opening is more conductive to proton exchange. To facilitate the embedding of the proton membrane, a 1mm-wide gap has been left around the grid, which also acts as a safeguard against membrane damage.The small hole at the bottom of the pot is designed for waste medium discharge, while the side bend serves to input carbon dioxide,keep the anaerobic environment and maintain air pressure within the tank.
+                    </p>
+
+                    <h3>
+                        3. Cathode Tank
+                    </h3>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image6.png"
+                     class="normimg"
+                     alt="Figure 6 Main view of Shewanella cathode tank">
+                  <i class="imgexplain">Figure 6 Main view of Shewanella cathode tank</i>
+
+                  <p>
+                      The counterpart of the anode tank is the cathode tank.We have also designated the position of the cathode plate on top, and left the corresponding inner thread for the cathode cover.The threaded connection on the side bears similarities to that of the anode tank, with the exception of the opposite thread direction and omitting a 1mm width.The thread in the opposite direction ensures that the cathode and anode tanks can be connected at the same time without inversion problems when installing the proton membrane connector.
+                    </p>
+
+                    <h3>
+                        4. Other Components
+                    </h3>
+
+                  <h4>
+                        ①Filter Plates and Flow Switches
+                    </h4>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image7.png"
+                     class="normimg"
+                     alt="Figure 7 Assembly drawing of Parts 1, 2 and 3 (from top to bottom)">
+                  <i class="imgexplain">Figure 7 Assembly drawing of Parts 1, 2 and 3 (from top to bottom)</i>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image8.png"
+                     class="normimg"
+                     alt="Figure 8 Part 1 ( No. 1 filter plate)">
+                  <i class="imgexplain">Figure 8 Part 1 ( No. 1 filter plate)</i>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image9.png"
+                     class="normimg"
+                     alt="Figure 9 Part 2 ( No. 2 filter plate+No.1 flow switch)">
+                  <i class="imgexplain">Figure 9 Part 2 ( No. 2 filter plate+No.1 flow switch)</i>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image10.png"
+                     class="normimg"
+                     alt="Figure 10 Part 3 ( No.3 flow switch)">
+                  <i class="imgexplain">Figure 10 Part 3 ( No.3 flow switch)</i>
+
+                  <p>
+                      In order to better achieve the symbiotic relationship between Cyanobacteria and Shewanella, we have incorporated three components between the Cyanobacteria fermenter and the Shewanella anode tank to facilitate the addition of a membrane filter while preventing leakage.
+                  </p>
+                  <p>
+                      The first component is the No.1 filter plate, with one side equipped with a carbon dioxide entrance.Carbon dioxide is first passed into the Shewanella anode tank to ensure its anaerobic environment, and then bypass the flow switch partially through to the cyanobacteria fermenter to participate in the reaction of cyanobacteria.This ensures that the cyanobacteria can also be given sufficient carbon dioxide when the flow switch is turned off, and the design of feeding the carbon dioxide from near the filter membrane allows the gas to blow up the cyanobacteria deposited on the filter membrane. Both sides of the No.1 filter plate are equipped with threads, with the upper thread connected to the Cyanobacteria fermenter and the lower connection to the No.2 filter plate.
+                    </p>
+                  <p>
+                      The bottom-most No.2 flow switch has a similar fan-shaped structure as that of the No.1 flow switch, with its lower thread connecting to the Shewanella anode tank.Its side surface also has a conduit, which can ensure that when the flow switch is closed, gas can be introduced into the Cyanobacteria fermenter to maintain an anaerobic environment.
+                    </p>
+
+                    <h4>
+                        ②Connecting Pipe
+                    </h4>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image11.png"
+                     class="normimg"
+                     alt="Figure 11 Side view of the proton membrane junction">
+                  <i class="imgexplain">Figure 11 Side view of the proton membrane junction</i>
+
+                  <p>
+                      We also have a separate connecting pipe designed between the cathode tank and anode tank. It has completely symmetrical positive-reverse thread structure. And since the screw starting point of the cathode and anode tanks is the same but with opposite rotation direction, we can separate them without rotating the tank body to replace the proton membrane.
+                  </p>
+
+                  <h4>
+                      ③Threaded cover
+                  </h4>
+                  <img
+                    src="https://static.igem.wiki/teams/4595/wiki/hardware/image12.png"
+                    class="normimg"
+                    alt="Figure 12  threaded cap of Anode tank">
+                  <i class="imgexplain">Figure 12  threaded cap of Anode tank</i>
+                  <img
+                    src="https://static.igem.wiki/teams/4595/wiki/hardware/image13.png"
+                    class="normimg"
+                    alt="Figure 13 Threaded cap of cathode tank">
+                  <i class="imgexplain">Figure 13 Threaded cap of cathode tank</i>
+                  <img
+                      src="https://static.igem.wiki/teams/4595/wiki/hardware/image14.png"
+                      class="normimg"
+                      alt="Figure 14 Cyanobacteria tank feeding port threaded cap">
+                  <i class="imgexplain">Figure 14 Cyanobacteria tank feeding port threaded cap</i>
+                  <p>
+                      The cathode, like the anode, is equipped with a threaded electrode cover to ensure that the culture medium does not flow out of the electrode port and can easily replace the electrode. In addition, each cover has 2mm holes, leaving room for the insertion of the electrode in advance.
+                  </p>
+
+                  <p>
+                      Considering that the initial addition of media requires a faster rate of adding samples, but the subsequent replenishment of media requires the use of catheters for continuous adding samples, and requires a closed internal environment, we set a large feeding port on the cyanobacteria fermenter, and equipped it with a corresponding connecting port for the use of catheter sampling. This is also in the form of threads to ensure better tightness.
+                  </p>
+
+                  <h3>
+                      Procedures of Use
+                  </h3>
+                  <li>
+                      <ul>①Assemble the proton membrane and connect the cathode and anode tanks.</ul>
+                      <ul>②Add the electrolyte and Shewanella,cover the cathode and anode cover as well.</ul>
+                      <ul>③Install the filter membrane, connect the Cyanobacteria fermenter and anode tank, turn off the flow switch and connect the carbon dioxide inlet and outlet to add the Cyanobacteria.</ul>
+                      <ul>④Plug in the warm water, turn on the flow switch properly and done!</ul>
+                  </li>
+
+                  <h3>
+                      C. Electric Part
+                  </h3>
+                  <p>
+                    Our hardware also needs to realize the detection of the growth condition of the medium, such as temperature, ph value, etc., and also according to the temperature to control the in and out of the hot air to ensure the appropriate temperature of the medium, as well as according to the ph value to control the replenishment and flow of the medium.
+                      <br>
+                      Therefore, we built a set of simple control board based on STM32F103C8T6 master to realize these functions.
+                      <br>
+                      The wiring diagram on the breadboard is as follows:
+                  </p>
+                  
+
+<!--
+
+-->
                  <h1 class="sectitle title-cover" id="sectitle1">
                    Section 2
                  </h1>
