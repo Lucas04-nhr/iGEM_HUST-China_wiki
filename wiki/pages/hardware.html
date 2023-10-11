@@ -543,27 +543,204 @@
                         In the mixed homogeneous microalgae culture system, the light attenuation caused by algal fluid in the concentration range is generally considered to conform to such Lambert-Beer law:
                         <br>
                         $I=I_0\cdot\exp{\left(-aXL\right)}$
+                        <br>
                         $A\left(X\right)=\alpha X$
                         <br>
                         or
                         <br>
                         $A\left(X\right)=\alpha_mX+\left(\alpha_0-\alpha_m\right)X\exp{\left(-\varepsilon x\right)}$
                     </p>
+                  <p>
+                            I0 - the incident light intensity, I - the light intensity at the optical path L(cm), α - the specific extinction coefficient(m2/kg), α0 - the specific extinction coefficient at X=0, αm - the minimum specific extinction coefficient, A(X) - the optical attenuation coefficient, ε - proportional coefficient.[1]-[2]
+                      <br>
+                            With the help of the two groups of data, we have carried out the fitting respectively to get two relations:
+                  </p>
 
-<!--D.	Mathematical modeling part
-The cyanobacterium Synechocystis sp. PCC 6803 was the first phototrophic organism to be fully sequenced. As a result of the genome sequencing and the establishment of various databases, Synechocystis sp. PCC 6803 provides an extremely versatile and easy model to study the genetic systems of photosynthetic organisms. Light energy is the most important energy substrate for the growth of algal cells, so how to make Synechocystis sp. PCC 6803 use light energy reasonably and efficiently is one of the major problems that our hardware needs to solve. By means of literature search and experimental verification, we fit the cell growth curve and the light attenuation curve in the bacterial solution.
+                  <i class="imgexplain">Table 2 Direct radiation in Wuhan in four seasons</i>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/table2.png"
+                         class="normimg"
+                         alt="Direct radiation in Wuhan in four seasons">
 
-Fitting of light attenuation curve
-In the mixed homogeneous microalgae culture system, the light attenuation caused by algal fluid in the concentration range is generally considered to conform to such Lambert-Beer law:
+                  <p>
+                        With reference to the literature, we know that the optimal cultivation light intensity of PCC is 300-1000μE/m2·s[3], and Synechocystis sp.PCC 6803 has the highest biomass productivity and efficiency in converting light energy to biomass at a culture density of 760mg/L[4]. Thus, we substitute the second type of optical attenuation coefficient expression to get:
+                        <br>
+                        $L=\frac{\ln{\frac{I_0}{I}}}{A(X)}$
+                        <br>
+                        Then, we plugged in the transmittance of our materialcan (0.93) and further introduced the most suitable amount of liquid in our fermentation tank is 4.719-11.730 cm. Under these conditions, we chose 8 cm as our filling volume.
+                  </p>
+
+                    <h4>
+                        Construction of cell growth dynamics model
+                    </h4>
+                  <p>
+                        We cultured the cells in a 250ml shaker bottle with a liquid volume of 150ml, at a culture temperature of 30℃ and incident light intensity of 100μE/(m2·s). Since the algal cell biomass curve is similar to the cell growth curve during microbial fermentation, we can describe the algal cell growth with the help of microbial fermentation growth kinetics. Using light energy as a substrate, the growth rate of cells in the growth phase can be expressed as follows by Logistic equation description:
+                        <br>
+                        $\frac{dx}{dt}=\mu_{max}\left(1-\frac{x}{x_{max}}\right)x$
+                        <br>
+                        μmax is the maximum specific cell growth rate (1/h), and xmax is the maximum cell concentration (g/L). When t=t0 and x = x0, the integral transformation of the equation yields:
+                        <br>
+                        $x=\frac{x_0e^{\mu_mt}}{1-\frac{x_0}{x_m}\left(1-e^{\mu_mt}\right)}$
+                        <br>
+                        After fitting the test data, the cell growth kinetics equation and the cell growth curve over time was obtained:
+                  </p>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image20.png"
+                         class="normimg"
+                         alt="Figure 20 Cell concentration curve">
+                  <i class="imgexplain">Figure 20 Cell concentration curve</i>
+
+                  <p>
+                        The fitting equation is:
+                        <br>
+                        $x=\frac{x_0e^{0.68t}}{1-\frac{x_0}{0.616}\left(1-e^{0.68t}\right)},R^2=0.962083$
+                        <br>
+                        Figure. Growth curve of Synechocystis sp.PCC 6803
+                        <br>
+                        In fact, we also know that Synechocystis sp.PCC 6803 has the highest biomass productivity and efficiency in converting light energy to biomass at a culture density of 760mg/L.[4] Therefore, with this growth model, we can more clearly define the cycle of media replacement and keep our system operating efficiently.
+                  </p>
 
 
-
-
-
--->
-                 <h1 class="sectitle title-cover" id="sectitle1">
-                   Section 2
+                 <h1 class="sectitle title-cover" id="sectitle2">
+                   Section 2:"Family" of modular fermentation units
                  </h1>
+
+                  <p>
+                        We are trying to build a fermentation facility for our co-culture system to test it in the laboratory and to prepare for the practical application of the project in a thermal power plant in the future. In the process of design and research, we found that in the current synthetic biology related projects, synthetic biology practitioners sometimes do not have the perfect fermentation engineering reserves to connect the results of the laboratory level with the industrial applications, and in the amplification process before putting into production, we often encountered that the fermentation results are inconsistent with the simple shake flask culture, and the lack of a miniature fermentation device to predict the effects of the project, which led to some cost wastage.
+                        <br>
+                        Therefore, we constructed a set of miniature modular fermentation equipment system, through the research of the current pilot and even the production of fermentation equipment and reasonably reduced and modularized to build a set of miniature fermentation system, so as to be able to simulate the effect of the pilot and even production in the laboratory. The fermentation equipment system consists of several modules, through the replacement of different parts within the module, and then realize the culture of different strains and under different conditions, and accordingly build a set of fermentation system for our co-culture system.
+                  </p>
+
+                  <h3>
+                        A. Mixing Module
+                  </h3>
+                  <p>
+                        In the fermentation process, due to the different viscosity of different liquids and other reasons, it may lead to different reaction degrees in different positions in the tank, so there is a need to increase the contact area by stirring and accelerate the reaction. Moreover, in order to better simulate the industrial application scenario, we set up two models of six-flat-blade turbine and six-curved blade turbine, both of which can withstand different stress levels. Users can choose the right mixing paddle according to the liquid viscosity in the tank. If the speed needs to be increased, the electric control parameters can be adjusted to achieve the purpose.
+                  </p>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image21.png"
+                         class="normimg"
+                         alt="Figure 21 Curved page propeller">
+                  <i class="imgexplain">Figure 21 Curved page propeller</i>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image22.png"
+                         class="normimg"
+                         alt="Figure 22 Flat Page Propeller">
+                  <i class="imgexplain">Figure 22 Flat Page Propeller</i>
+
+                  <h3>
+                        B. Antifoam Module
+                  </h3>
+                    <p>
+                            During the reaction process, especially when stirred, because some fermentation media themselves contain many surface active substances, and the strain reaction will also produce surface active substances, all tanks are prone to foam. Foam can reduce production capacity, cause waste of raw materials, affect bacterial respiration, and even lead to bacterial contamination. So we built two defoaming devices to ensure fermentation efficiency, uniformity and safety. The rake type is simple and easy to use, but the defoaming effect is general; The rotary disk defoamer is more effective but requires electricity, and the user can freely choose according to the number of bubbles.
+                    </p>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image23.png"
+                         class="normimg"
+                         alt="Figure 23 Rake Antifoam Paddle">
+                  <i class="imgexplain">Figure 23 Rake Antifoam Paddle</i>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image24.png"
+                         class="normimg"
+                         alt="Figure 24 Rotary Disc Defoamer">
+                  <i class="imgexplain">Figure 24 Rotary Disc Defoamer</i>
+
+                  <h3>
+                        C. Temperature control module
+                  </h3>
+                  <p>
+                        During fermentation, some strains have higher requirements for temperature, so it is necessary to control the temperature in the tank to ensure the fermentation environment. We built two kinds of temperature control tube and temperature control coil to better fit the fermenter.
+                  </p>
+
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image25.png"
+                         class="normimg"
+                         alt="Figure 25 Temperature control coil">
+                  <i class="imgexplain">Figure 25 Temperature control coil</i>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image26.png"
+                         class="normimg"
+                         alt="Figure 26 Temperature control tube">
+                  <i class="imgexplain">Figure 26 Temperature control tube</i>
+
+                  <h4>
+                      Air Distribution Module
+                  </h4>
+
+                  <p>
+                        In our fermenter, a single orifice tube type gas intake device has been used. If a more effective ventilation device is required, the annular air distribution tube below can also be used. The device can reduce the diameter of bubbles entering the culture medium, increase the dissolution amount, increase the contact area, and better ensure the gas supply and reaction.
+                  </p>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image27.png"
+                         class="normimg"
+                         alt="Figure 27 Annular Air Distribution Tubes">
+                  <i class="imgexplain">Figure 27 Annular Air Distribution Tubes</i>
+
+                    <h4>
+                        Other tank modules
+                    </h4>
+                    <p>
+                        During co-bacterial culture, the upper fermenter can select the printing material according to whether the light is needed. Below is an example of a fermenter that does not require light.
+                    </p>
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image28.png"
+                         class="normimg"
+                         alt="Figure 28 Non-optical fermenter">
+                  <i class="imgexplain">Figure 28 Non-optical fermenter</i>
+
+                  <p>
+                        When the lower strain of co-culture does not produce electricity and there is no need for electron enrichment, the lower fermenter can be replaced with the one shown in the following figure.
+                  </p>
+
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image29.png"
+                         class="normimg"
+                         alt="Figure 29 Co-culture the lower tank when no electricity is produced">
+                  <i class="imgexplain">Figure 29 Co-culture the lower tank when no electricity is produced</i>
+
+                  <p>
+                        When it is just a single culture, the fermenter below can be used in combination with the various parts mentioned earlier.
+                  </p>
+
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image30.png"
+                             class="normimg"
+                             alt="Figure 30 Monomicrobial fermenter">
+                  <i class="imgexplain">Figure 30 Monomicrobial fermenter</i>
+
+                  <p>
+                        This fermenter focuses on solving the difficult problem of laboratory-to-industrial crossing in synthetic biology.it is able to meet the process optimization and characterization requirements of the biotechnology and biopharmaceutical industries, and provides excellent functionality and outstanding choices for microbial processes, making it an ideal scaled-down model for large-scale processes. The tanks are designed with similar geometrical structure, with continuous and consistent mixing and aerating strategies, overcoming the problems that need to be considered for industrial applications such as oxygen uptake efficiency and shear resistance in laboratory shaking operations, and autonomously realizing operations such as replenishment, temperature control, and oxygen control, which will be well suited to provide data samples for testing and feasibility analysis for fermentation-based projects.
+                        <br>
+                        The team has already conducted various types of user tests, and the SUS scale shows high user satisfaction. Scenario tests with fermentation engineering laboratories and relevant enterprises cooperating with the school have confirmed its high fermentation level.
+                        <br>
+                        In addition, all the design and operation methods of this fermentation system are publicly available for reference and replication by other teams.
+                  </p>
+
+                    <h1 class="sectitle title-cover" id="sectitle3">
+                        Section 3: Industrialization thoughts
+                    </h1>
+
+                    <p>
+                            In considering the transformation of the laboratory model into an industrial scenario, the general idea is as follows: To begin with, multiple laboratory models are presented in a form similar to side by side. Keep the small mushroom shape of the cyanobacteria tank, and combine the anode and cathode tanks of Shiwanella, roughly as shown in Figure 31.
+                    </p>
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image31.png"
+                         class="normimg"
+                         alt="Figure 31 The first step of industrialization">
+                  <i class="imgexplain">Figure 31 The first step of industrialization</i>
+                  <p>
+                        After taking into account that such industrialization will consume too much material, it is necessary to add samples several times when adding samples, and the volume of cyanobacteria is significantly reduced, so on the premise of taking into account the lighting requirements of cyanobacteria, the cyanobacteria tank is combined into a large capsule shape tank, roughly shaped as shown in Figure 32.
+                  </p>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image32.png"
+                             class="normimg"
+                             alt="Figure 32 The second step of industrialization">
+                  <i class="imgexplain">Figure 32 The second step of industrialization</i>
+                    <p>
+                            Then, considering that in real industrialization, the filter membrane can be directly installed at the mouth of the pipe, and the flow switch can be realized through the water valve, the real industrialization idea is finally formed, that is Figure 33.
+                    </p>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image33.png"
+                                 class="normimg"
+                                 alt="Figure 33 Final industrialization">
+                  <i class="imgexplain">Figure 33 Final industrialization</i>
+                    <p>
+                            Considering that it is the hot gas that provides heat to the cyanobacteria tank in the real industrialization, the gas enters from the lower left corner of the tank and is discharged from the upper right corner, which can ensure that the gas is in full contact with the medium and the heat transfer is carried out as far as possible. In addition, since the culture of Shiwanella requires an anaerobic environment, it is also necessary to inject CO2 into Shiwanella, so it is also adopted to pass into the upper right corner of the left corner. In addition, in order to prevent CO2 from entering the cyanobacteria fermenter retrograde from the culture medium flow pipe, the flow pipe is curved so as to form a water seal to prevent CO2 from entering the cyanobacteria fermenter, thereby reducing the temperature of the cyanobacteria fermenter medium. In the real industrial implementation, a part of the hot CO2 produced by the power plant is first cooled to become CO2 at room temperature, and the CO2 at room temperature can be directly passed into the Shewanella tank to ensure an anaerobic environment. Then take part of the normal temperature CO2 and hot CO2 quantitative ratio, into the cyanobacteria fermenter, in order to play the role of heating and heat preservation. When regulating the temperature of the cyanobacteria tank, it is only necessary to adjust the ratio of cold and hot gases to regulate the temperature. In addition, we took inspiration from the design of the solar panels to add a certain Angle to the support of the cyanobacteria fermenter. Different regions can adjust the tilt Angle according to their latitude, so as to ensure that the cyanobacteria fermenter can better receive light.
+                    </p>
+                    <p>
+                            In the future, the cyanobacteria fermenter may also be replaced by special plastic bags, so as to better reduce costs. In summary, we consider the problems that may be encountered in the process of real industrialization, can better simulate industrial problems from the perspective of the laboratory, and put forward reasonable industrialization ideas. Looking at the big world from a small model can help promote the development of synthetic biology.
+                    </p>
 
 <!--              This is the end of the article-->
 
