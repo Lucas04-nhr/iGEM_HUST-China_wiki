@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d82e4ea-6369-44b1-96c6-2e0bd6225e83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/wiki/pages/notebook.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/pages/notebook.html" afterDir="false" />
+    <list default="true" id="5d82e4ea-6369-44b1-96c6-2e0bd6225e83" name="Changes" comment="Update notebook.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +88,35 @@
       <workItem from="1696914677129" duration="1231000" />
       <workItem from="1696935761815" duration="2535000" />
       <workItem from="1696940158667" duration="2274000" />
-      <workItem from="1697016637972" duration="2675000" />
+      <workItem from="1697016637972" duration="7255000" />
     </task>
+    <task id="LOCAL-00001" summary="Update notebook.html">
+      <option name="closed" value="true" />
+      <created>1697031447205</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697031447205</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update notebook.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update notebook.html" />
   </component>
 </project>
