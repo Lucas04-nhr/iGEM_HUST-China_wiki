@@ -409,9 +409,144 @@
                       <br>
                       The wiring diagram on the breadboard is as follows:
                   </p>
-                  
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image15.png"
+                     class="normimg"
+                     alt="Figure 15 Wiring diagram on the breadboard">
+                  <i class="imgexplain">Figure 15 The iring diagram on the breadboard</i>
 
-<!--
+                  <h4>
+                      Temperature Acquisition Section
+                  </h4>
+                  <p>
+                        In the temperature acquisition section, we have used DS18B20 module.The DS18B20 module provides 12-bit temperature readout with a temperature range of -55° to 125°. The temperature information is sent to and from the DS18B20 via a single wire interface. Therefore, only one wire (and ground) needs to be connected from the CPU to the DS18B20. The power required to read, write, and complete temperature conversions can be supplied from the data line itself, and no external power supply is required.
+                        <br>
+                        The DS18B20 stores the temperature value in 12 bits, with the remaining high bits being sign bits. All 1s are negative and all 0s are positive. Thus the DS18B20 can achieve an accuracy of 0.0625°.
+                  </p>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image16.png"
+                         class="normimg"
+                         alt="Figure 16 DS18B20 Data Register Relationship Table">
+                  <i class="imgexplain">Figure 16 DS18B20 Data Register Relationship Table</i>
+
+                    <p>
+                        For the hardware connection, the DS18B20 needs to be connected to a temperature probe for data acquisition, and itself needs to be connected to a 3-5V supply, ground, and a data cable.
+                    </p>
+
+                    <h4>
+                        PH Detection Section
+                    </h4>
+                    <p>
+                        For the PH detection part we chose a PH sensor module.
+                        <br>
+                        The module is connected to the PH composite electrode through a BNC connector and expanded with a DS18B20 temperature sensor interface, which is convenient for the software to carry out temperature compensation design. Adjusting the 10K blue potentiometer can be adjusted for amplification.
+                    </p>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image17.png"
+                         class="normimg"
+                         alt="Figure 17 PH sensor module">
+                  <i class="imgexplain">Figure 17 PH sensor module</i>
+
+                  <p>
+                        The module pins are defined as follows：
+                  </p>
+                  <i class="imgexplain">Table 1 Module pins</i>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/table1.png"
+                            class="normimg"
+                            alt="Table 1 Module pins">
+
+                    <p>
+                       Before using the PH sensor, we need to use the two-point calibration method. Since our medium environment is acidic, the PO port output voltage can be measured in a standard buffer with a pH of 6.86 and a pH of 4.00, and then a V-PH curve can be fitted in EXCEL based on these two points, from which the pH value of the medium can be calculated.
+                    </p>
+
+                    <h4>
+                        Solenoid Valve Control Section
+                    </h4>
+                    <p>
+                        Our solenoid valve is a normally closed type, with an operating voltage of DC12V.
+                        <br>
+                        Since the maximum output voltage of STM32 is limited, in order to drive this 12V solenoid valve, we need to borrow an external 12V battery (of course, in the future, after the industrialization of maturity, we can realize the self-sufficiency of the power supply), an NMOS FET, and a 10K pull-up resistor to form a driver circuit.
+                    </p>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image18.png"
+                         class="normimg"
+                         alt="Figure 18 Solenoid Valve Drive Circuit">
+                  <i class="imgexplain">Figure 18 Solenoid Valve Drive Circuit</i>
+
+                  <p>
+                        PA6 is the microcontroller output pin. In order to utilize the microcontroller to output 12V, we configure the output mode of PA6 pin as open-drain output mode to realize that when the output is low, the output is 0, the NMOS tube is cut off, and the solenoid valve is closed; and when the output is high, the output is high resistive so that the NMOS tube is turned on, and the solenoid valve is opened.
+                        <br>
+                        The value of PA6 determines the opening and closing of the solenoid valve, and the microcontroller judges the value of PA6 according to the acquired information such as temperature and PH value to realize the entry and exit of hot air and the replenishment of culture medium.
+                  </p>
+
+                  <h4>
+                      Main Function Code
+                  </h4>
+                    <p>
+                        The main function code is as follows:
+                    </p>
+                  <img src="https://static.igem.wiki/teams/4595/wiki/hardware/code.png"
+                       class="normimg"
+                       alt="Main function code">
+
+                  <p>
+                      Ph calibration curves for calculations in the main function
+                  </p>
+                    <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image19.png"
+                         class="normimg"
+                         alt="Figure 19 ph Calibration Curve">
+                  <i class="imgexplain">Figure 19 ph Calibration Curve</i>
+
+                  <h5>
+                      Other:
+                  </h5>
+                    <p>
+                        The appendix should have
+                        <br>
+                        Keil project files;
+                    </p>
+                  <br>
+                  <p>
+                        To verify that both the temperature sensing and ph sensing modules in the circuit work correctly and accurately, we tested them and express the results in the video below. As it shows, they all work well.
+                  </p>
+
+
+<!--                  Video 1 Embedded here-->
+                  <video src=""
+                         controls="controls"
+                         width="100%"
+                         height="auto">
+                  </video>
+                  <i class="imgexplain">Video 1 Electronic control test</i>
+
+
+<!--                  This is the end of the video frame.-->
+                <h3>
+                    D. Mathematical modeling part
+                </h3>
+                  <p>
+                      The cyanobacterium Synechocystis sp. PCC 6803 was the first phototrophic organism to be fully sequenced. As a result of the genome sequencing and the establishment of various databases, Synechocystis sp. PCC 6803 provides an extremely versatile and easy model to study the genetic systems of photosynthetic organisms. Light energy is the most important energy substrate for the growth of algal cells, so how to make Synechocystis sp. PCC 6803 use light energy reasonably and efficiently is one of the major problems that our hardware needs to solve. By means of literature search and experimental verification, we fit the cell growth curve and the light attenuation curve in the bacterial solution.
+                  </p>
+
+                  <h4>
+                      Fitting of light attenuation curve
+                  </h4>
+                    <p>
+                        In the mixed homogeneous microalgae culture system, the light attenuation caused by algal fluid in the concentration range is generally considered to conform to such Lambert-Beer law:
+                        <br>
+                        $I=I_0\cdot\exp{\left(-aXL\right)}$
+                        $A\left(X\right)=\alpha X$
+                        <br>
+                        or
+                        <br>
+                        $A\left(X\right)=\alpha_mX+\left(\alpha_0-\alpha_m\right)X\exp{\left(-\varepsilon x\right)}$
+                    </p>
+
+<!--D.	Mathematical modeling part
+The cyanobacterium Synechocystis sp. PCC 6803 was the first phototrophic organism to be fully sequenced. As a result of the genome sequencing and the establishment of various databases, Synechocystis sp. PCC 6803 provides an extremely versatile and easy model to study the genetic systems of photosynthetic organisms. Light energy is the most important energy substrate for the growth of algal cells, so how to make Synechocystis sp. PCC 6803 use light energy reasonably and efficiently is one of the major problems that our hardware needs to solve. By means of literature search and experimental verification, we fit the cell growth curve and the light attenuation curve in the bacterial solution.
+
+Fitting of light attenuation curve
+In the mixed homogeneous microalgae culture system, the light attenuation caused by algal fluid in the concentration range is generally considered to conform to such Lambert-Beer law:
+
+
+
+
 
 -->
                  <h1 class="sectitle title-cover" id="sectitle1">
