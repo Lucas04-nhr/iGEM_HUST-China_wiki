@@ -121,3 +121,175 @@
       </div>
     </div>
   </div>
+
+   <div class="container">
+    
+<div class="titel-margin"></div>
+<div class="container">
+    <div class="catalogue">
+        <h4>content</h4>
+        <ul>
+            <li><a href="#sectitle1">Introduction</a></li>
+            <li><a href="#sectitle2">Basic parts</a></li>
+            <li><a href="#sectitle3">Improvement</a></li>
+            <li><a href="#sectitle4">Composite parts</a></li>
+        </ul>
+    </div>
+
+    <div class="main content">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="content col-lg-10">
+                <article>
+                    <h1 class="sectitle title-cover" id="sectitle1">Section 1 : Introduction</h1>
+                    <p>Biology is different from other engineering fields due to a lack of modular nature of 
+                        the structure and function, which means the expression of gene will change when transferred
+                         from one species to another. What synthetic biology is dedicated to is the modularization
+                          and standardization of functional gene, to make the expression of it predictable in 
+                          different chassis organism. Our project has registered 8 basic parts and 6 composite 
+                          parts, all qualified for standardized requirement of RFC[10]. We have also tested these 
+                          parts. We hope that everyone can utilize our parts based on our research through registry 
+                          and that the information for parts can further be completed so that more people can make
+                           use of them.</p>
+                    <h1 class="sectitle title-cover" id="sectitle2">Section 2 : Basic parts</h1>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Part Number</th>
+                            <th scope="col">Part Name</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Length</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">BBa_K4468000</td>
+                            <td>PmrC</td>
+                            <td>Regulatory</td>
+                            <td>393</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468001</td>
+                            <td>PgolB</td>
+                            <td>Regulatory</td>
+                            <td>2001</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468002</td>
+                            <td>PmrA</td>
+                            <td>Coding</td>
+                            <td>669</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468003</td>
+                            <td>PmrB(LanM)</td>
+                            <td>Coding</td>
+                            <td>1020</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468004</td>
+                            <td>PmrB(FP)</td>
+                            <td>Coding</td>
+                            <td>1116</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468005</td>
+                            <td>GolS</td>
+                            <td>Coding</td>
+                            <td>438</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468006</td>
+                            <td>Oprf-Sitag-LanM</td>
+                            <td>Coding</td>
+                            <td>1761</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468007</td>
+                            <td>Oprf-Sitag-FP</td>
+                            <td>Coding</td>
+                            <td>1911</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468014</td>
+                            <td>PmrB(dLBT)</td>
+                            <td>Coding</td>
+                            <td>1068</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468015</td>
+                            <td>Oprf-Sitag</td>
+                            <td>Coding</td>
+                            <td>1386</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <h1 class="sectitle title-cover" id="sectitle3">Section 3 : Improvement</h1>
+                        <p>
+                          Fusion Protein (FP) and LanM(Lanmodulin) are proteins binding Lanthanide that can be used to purify the 
+                          water polluted by REE mining industry. This basic part has been registered by iGEM2017_HUST as BBa_K2336033. 
+                          We improved its function and registered as new parts BBa_K4468007 and BBa_K4468006.<br>
+                          Firstly, we optimized the codon of this gene according to the codon preference to improve 
+                          its expression level.<br>
+                          Secondly, research shows that LanM is a strong Lanthanide binding protein with three strong binding site. 
+                          we construct a LanM-dLBT fusion proteins named FP and expressed it, hoping that they could show a better 
+                          binding activity. We also want to recycle the engineered strain for the sake of safety and economy concern. 
+                          So we bind the Si-tag with the protein to bind the cell to SiO<sub>2</sub> in nature sand.<br>
+                          Then, we predicted the 3D structure of FP. The docking result shows that the Tb<sup>3+</sup> have an 
+                          affinity to the EF-hand domains of the fusion protein.<br>
+                          Therefore, we started to build the regulation system and achieved success in expression. 
+                        </p>
+                    <h1 class="sectitle title-cover" id="sectitle4">Section 4 : Composite parts</h1>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Part Number</th>
+                            <th scope="col">Part Name</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Length</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">BBa_K4468008</td>
+                            <td>T7-PmrA-T7-PmrB-T7<br>Terminator-PmrC-Oprf-Sitag-T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>3971</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468009</th>
+                            <td>GolS- PgolB</td>
+                            <td>Composite</td>
+                            <td>2439</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468010</th>
+                            <td>T7-PmrA-T7-PmrB(LanM)-T7<br>Terminator-PmrC-Oprf-Sitag-LanM-T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>4289</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468011</th>
+                            <td>T7-PmrA-T7-PmrB(FP)-T7<br>Terminator-PmrC-Oprf-Sitag-FP- T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>4439</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468012</th>
+                            <td>T7-GolS-PgolB-Oprf-Sitag-LanM- T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>4200</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4468013</th>
+                            <td>T7-GolS-PgolB-Oprf-Sitag-LanM- T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>4350</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
