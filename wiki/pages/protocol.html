@@ -379,136 +379,583 @@
 
                     <table>
                         <tr>
-                            Mother Solution Proportion
+                            <th>Mother Solution </th>
+                            <th>Proportion</th>
+                            <th>Final Concentration</th>
                         </tr>
                         <tr>
-                            Final Concentration
+                            <td>Mother Solution 1</td>
+                            <td>1:1000</td>
+                            <td>0.04 g/L</td>
                         </tr>
                         <tr>
-                            Mother Solution 1
+                            <td>Mother Solution 5</td>
+                            <td>1:1000</td>
+                            <td>0.006 g/L</td>
                         </tr>
                         <tr>
-                            1:1000
+                            <td>1M TES-NaOH (pH 8.0)</td>
+                            <td>1.6：200</td>
+                            <td>0.008 M</td>
                         </tr>
                         <tr>
-                            0.04 g/L
-                        </tr>
-                        <tr>
-                            Mother Solution 5
-                        </tr>
-                        <tr>
-                            1:1000
-                        </tr>
-                        <tr>
-                            0.006 g/L
-                        </tr>
-                        <tr>
-                            1M TES-NaOH (pH 8.0)
-                        </tr>
-                        <tr>
-                            1.6：200
-                        </tr>
-                        <tr>
-                            0.008 M
-                        </tr>
-                        <tr>
-                            30% Na<sub>2</sub>S<sub>2</sub>O<sub>3</sub>
-                        </tr>
-                        <tr>
-                            2：200
-                        </tr>
-                        <tr>
-                            3 g/L
+                            <td>30% Na<sub>2</sub>S<sub>2</sub>O<sub>3</sub></td>
+                            <td>2：200</td>
+                            <td>3 g/L</td>
                         </tr>
                     </table>
 
-            <!--Mother Solution	Proportion	Final Concentration
-Mother Solution 1	1:1000	0.04 g/L
-Mother Solution 5	1:1000	0.006 g/L
-1M TES-NaOH (pH 8.0)	1.6：200	0.008 M
-30% Na2S2O3	2：200	3 g/L
+                    <h2>
+                        MBG11
+                    </h2>
+                    <table>
+                        <tr>
+                            <th>Component</th>
+                            <th>Amount</th>
+                        </tr>
+                    </table>
 
-
-
--->
                     <h1 id="sectitle2">Molecular experiments</h1>
+
+                    <h2>
+                        Agarose gel electrophoresis
+                    </h2>
+                    <p>
+                        1) Measure 0.25 g of agarose and place it in a conical flask, then add 25 mL of TAE buffer.
+                        <br>
+                        2) Microwave on high for approximately 45 seconds until it boils, shake to disperse the agarose, repeat boiling once more until the solution becomes clear.
+                        <br>
+                        3) Add 2.5 μL Gelred dye, mix well, and pour it into a mold fitted with appropriately spaced combs.
+                        <br>
+                        4) Allow it to sit until the gel completely solidifies, approximately 30 minutes.
+                        <br>
+                        5) Gently and vertically remove the combs, take out the gel, and place it in an electrophoresis chamber.
+                        <br>
+                        6) Add TAE buffer until the gel is just covered (with the end containing the sample wells near the negative electrode).
+                        <br>
+                        7) Dilute 1 μL 10x loading buffer with 4 μL ultrapure water, mix with 5 μL PCR product, and load it into the sample wells of the gel. Finally, add 5 μL marker into the sample wells.
+                        <br>
+                        8) Set the voltage to 120V and run the electrophoresis for 20 minutes.
+                        <br>
+                        9) After electrophoresis is complete, remove the gel and capture images using a gel imaging system under ultraviolet conditions.
+                    </p>
+
+                    <h2>
+                        Gel extraction(purification)
+                    </h2>
+                    <p>
+                        1) Cut the gel as thin as possible, weigh the weight of the glue (mg) and add an equal μL of Buffer GDP, and place the gel in a 60 ℃ water bath to dissolve.
+                        <br>
+                        2) Transfer the liquid to the purification column and let it stand for 5 min.
+                        <br>
+                        3) Centrifugate at 12000 rpm for 1 min, pipette the liquid back to the suction column, and centrifugate at 12000 rpm for 1 min.
+                        <br>
+                        4) Discard the solution, add 300 μL Buffer GDP, and centrifugate at 12000 rpm for 1 min. (purification doesn’t include this step)
+                        <br>
+                        5) Add 700 μL Buffer GW, stand it for 5 min, centrifugate at 12000 rpm for 1 min. (only add 400  μL for purification)
+                        <br>
+                        6) Repeat step 5.
+                        <br>
+                        7) Discard liquid, centrifugate the empty column at 12000 rpm for 2 min.
+                        <br>
+                        8) Discard the collection tube and dry the column for 15~20 min.
+                        <br>
+                        9) Place the purification column on a 1.5 mL EP tube, add 30 μL ddH<sub>2</sub>O preheated at 60 ℃ to the center of the membrane, and stand it for 5 min.
+                        <br>
+                        10) Centrifugate at 12000 rpm for 2 min.
+                        <br>
+                        11) Pipette the liquid back to the suction column, centrifugate at 12000 rpm for 2 min.
+                        <br>
+                        12) Discard the column, measure the concentration and purity.
+                    </p>
+
+                    <h2>
+                        Construction of plasmid
+                    </h2>
+                    <h3>
+                        1) Amplified fragment
+                    </h3>
+                    <table>
+                        <tr>
+                            <th>Component</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>2 × Phanta Max Master Mix</td>
+                            <td>10 μL</td>
+                        </tr>
+                        <tr>
+                            <td>Upstream primer</td>
+                            <td>1 μL</td>
+                        </tr>
+                        <tr>
+                            <td>Downstream primer</td>
+                            <td>1 μL</td>
+                        </tr>
+                        <tr>
+                            <td>Template DNA</td>
+                            <td>1 μL</td>
+                        </tr>
+                        <tr>
+                            <td>ddH<sub>2</sub>O</td>
+                            <td>7 μL</td>
+                        </tr>
+                    </table>
+
+                    <h3>
+                        2) PCR system
+                    </h3>
+                    <table>
+                        <tr>
+                            <th>Temperature</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>95 ℃</td>
+                            <td>30 sec</td>
+                            <td rowspan="6">30 cycles</td>
+                        </tr>
+                        <tr>
+                            <td>95 ℃</td>
+                            <td>15 sec</td>
+                        </tr>
+                        <tr>
+                            <td>58 ℃</td>
+                            <td>15 sec</td>
+                        </tr>
+                        <tr>
+                            <td>72 ℃</td>
+                            <td>1.5 min</td>
+                        </tr>
+                        <tr>
+                            <td>72 ℃</td>
+                            <td>2 min</td>
+                        </tr>
+                        <tr>
+                            <td>12 ℃</td>
+                            <td>∞</td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        ①	Purify the correct linear fragment by running electrophoresis.
+                        <br>
+                        ②	Extract the gel.
+                        <br>
+                        ③	Recombine the fragments with homologous recombinase.
+                        <br>
+                        ④	Transform E. coli.
+                    </p>
+
+                    <h3>
+                        3)Homologous Recombination
+                    </h3>
+                    <p>
+                        ① Formulate the following system on the ice:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Component</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>Vector</td>
+                            <td>X μL</td>
+                        </tr>
+                        <tr>
+                            <td>Fragment</td>
+                            <td>Y μL</td>
+                        </tr>
+                        <tr>
+                            <td>5x CEⅡ Buffer</td>
+                            <td>4 μL</td>
+                        </tr>
+                        <tr>
+                            <td>ExnaseⅡ</td>
+                            <td>2 μL</td>
+                        </tr>
+                        <tr>
+                            <td>ddH<sub>2</sub>O</td>
+                            <td>To 20 μL</td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        X=[0.02×the number of base pairs of the vector÷the concentration of the vector] μL
+                        <br>
+                        Y=[0.04×the number of base pairs of the fragment÷the concentration of the fragment] μL
+                        <br>
+                        (When the fragment length is longer than the plasmid, regard the fragment as the plasmid and regard the plasmid as the fragment to calculation)
+                        <br>
+                        ② Gently suck and mix(do not shake fiercely), briefly centrifuge to collect the reaction liquid to the bottom of the tube.
+                        <br>
+                        ③ Put the tube in 37℃ water bath for 30 min, store in 4℃.
+                    </p>
+
+                    <h3>
+                        4)Double enzyme digestion
+                    </h3>
+                    <p>
+                        ① Formulate the following system on the ice:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Component</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>Enzyme 1</td>
+                            <td>5 μL</td>
+                        </tr>
+                        <tr>
+                            <td>Enzyme 2</td>
+                            <td>5 μL</td>
+                        </tr>
+                        <tr>
+                            <td>Buffer</td>
+                            <td>10 μL</td>
+                        </tr>
+                        <tr>
+                            <td>Fragment</td>
+                            <td>X μL</td>
+                        </tr>
+                        <tr>
+                            <td>ddH<sub>2</sub>O</td>
+                            <td>To 100 μL</td>
+                        </tr>
+                    </table>
+                    <p>
+                        ② Gently suck and mix(do not shake fiercely), briefly centrifuge to collect the reaction liquid to the bottom of the tube.
+                        <br>
+                        ③ Put the tube in PCR instrument, control the temperature at 37℃ for 2 hours, then 80℃ for 5 minutes.
+                    </p>
+
+                    <h3>
+                        5)Enzyme ligation
+                    </h3>
+                    <p>
+                        ① Formulate the following system on the ice:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Component</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>Plasmid</td>
+                            <td>X μL</td>
+                        </tr>
+                        <tr>
+                            <td>Fragment</td>
+                            <td>Y μL</td>
+                        </tr>
+                        <tr>
+                            <td>Ligation Mix</td>
+                            <td>10 μL</td>
+                        </tr>
+                        </tr>
+                    </table>
+                    <p>
+                        X=[50÷the concentration of the vector] μL
+                        <br>
+                        Y= approximately 3*X
+                        <br>
+                        ② Gently suck and mix(do not shake fiercely), briefly centrifuge to collect the reaction liquid to the bottom of the tube.
+                        <br>
+                        ③ Put the tube in 16 ℃ react for 20 min(while the 25 ℃ react for 10 min), store in -20℃ refrigerator.
+                    </p>
+
+                    <h2>
+                        Plasmid extraction
+                    </h2>
+                    <p>
+                        1) Take 2 mL bacteria solution to centrifugate at 12000 rpm for 1 min, and pour out the supernatant. (If the bacterial plaque is small, repeat until getting a large one.)
+                        <br>
+                        2) Add 250 μL solution I. Blow and stir repeatedly to ensure that there is no bacterial block to cleave the inside of the bacterial block adequately.
+                        <br>
+                        (Components of solution I: EDTA, glucose. EDTA is the chelating agent of divalent metal. It can chelate divalent metal ions to inhibit the activity of DNase, protecting the extracted DNA from degradation. Glucose plays the role of avoiding the suspended Escherichia coli settling too quickly.)
+                        <br>
+                        3) Add 250 μL solution II, slowly invert, and turn the tube several times to mix gently. Stand for two minutes to get a transparent cleavage solution. In order not to break the DNA chain, the operation must be very gentle. The standing time can not be too long since DNA will also break under alkaline conditions, otherwise, the genomic DNA will be broken. It is difficult to separate broken DNA from the plasmid.
+                        <br>
+                        (Components of solution Ⅱ: NaOH and SDS. NaOH dissolves cells and combines with protein to form the sediment. Remember to close the lid in time after using solution II because NaOH will react with carbon dioxide in the air.)
+                        <br>
+                        4) Add 350 μL solution III, immediately invert and mix.
+                        <br>
+                        (Components of solution Ⅲ: potassium acetate, acetic acid. SDS encounters potassium ions to generate water-insoluble PDS, resulting in a large amount of flocculent precipitation. Since the genomic DNA is a long chain, it is easy to be precipitated by these precipitations. It is difficult to precipitate if the genomic DNA breaks into short chains. )Acetic acid is to neutralize the sodium hydroxide in the previous step.)
+                        <br>
+                        5) Centrifugate at 12000 rpm for 15 min.
+                        <br>
+                        6) Take 100 μL of 3 M NaOH in the purification column for column equilibration, and centrifugate at 12,000 rpm for 1 min to discard excess sodium hydroxide. After column equilibration, the silica matrix membrane can be activated to the maximum extent and the plasmid yield can be improved.
+                        <br>
+                        7) Carefully pipette the supernatant into the column. Stand it for 10 minutes to make sure that DNA is fully adsorbed to the membrane. Centrifugate at 12000 rpm for 1 min. Repeat once without standing.
+                        <br>
+                        8) Add 500 μL HBC washing Buffer, centrifugate at 12000 rpm for 1 min and discard the filtrate.
+                        <br>
+                        9) Add 700 μL DNA washing Buffer (80% ethanol) to clean the purification column. Centrifugate at 12000 rpm for 1 min and discard the filtrate. Repeat the wash operation twice.
+                        <br>
+                        (Wash away impurities such as small molecular proteins and inorganic ions.)
+                        <br>
+                        10) Centrifugate empty column at 12000 rpm for 2 min.
+                        <br>
+                        11) Dry in 37 ℃ until the purification column is no ethanol (15 min).
+                        <br>
+                        (Remove ethanol in these two steps, otherwise, the subsequent elution efficiency will be affected.)
+                        <br>
+                        12) Put the purification column into a clean 1.5 mL EP tube and add 30 μL of the ddH<sub>2</sub>O preheated at 60 ℃ to the center of the silicone gel membrane, and stand it for 2 min. Centrifugate at 12000 rpm for 1 min.
+                        <br>
+                        (Preheat can improve the elution efficiency, and add it to the center of the silicone gel membrane to ensure that the eluent will completely cover the surface of the silicone membrane to achieve maximum elution efficiency.)
+                        <br>
+                        13) Repeat the elution with the above eluent without standing. The first standing is to let the eluent cover the silicone membrane and let the DNA fall off the column.
+                    </p>
+
+                    <h2>
+                        Preparation of <i>E.coli</i> WM3064 competent cells
+                    </h2>
+                    <p>
+                        1) Retrieve glycerol stocks of <i>E.coli</i> WM3064 from the -80 ℃. When the glycerol stocks have thawed, streak them onto solid LB+DAP agar plates without antibiotics. Incubate at 37 ℃ for approximately 12 hours. Then, pick a single colony for secondary activation and transfer it to 3 mL of antibiotic-free liquid LB+DAP medium. Incubate overnight at 37 ℃ with shaking at 220 rpm.
+                        <br>
+                        2) Inoculate 100 mL of LB+DAP liquid medium with a 1% inoculum from the secondary activation culture. Incubate at 37 ℃ with shaking at 220 rpm until the OD<sub>600</sub> reaches approximately 0.4-0.6.
+                        <br>
+                        3) Immediately place the culture in an ice-water bath. Transfer the obtained bacterial culture into pre-chilled 50 mL centrifuge tubes. Centrifuge at 4 ℃, 5000 rpm for 10 minutes, swiftly discard the supernatant, and invert the centrifuge tubes to ensure complete drainage and cells be recovered.
+                        <br>
+                        4) Resuspend the cells in 30 mL of pre-chilled 0.1 M CaCl<sub>2</sub> solution containing 10% glycerol. Centrifuge at 4 ℃, 5000 rpm for 10 minutes, then discard the supernatant.
+                        <br>
+                        5) Repeat step 4 three times.
+                        <br>
+                        6) Resuspend the cells in 1.8 mL of 0.1 M CaCl<sub>2</sub> glycerol solution. Transfer the resuspended cells into 1.5 mL sterile centrifuge tubes (100 μL aliquots) and store them in the -80℃ for future use.
+                    </p>
+
+                    <h2>
+                        <i>E. coli</i> heat shock transformation
+                    </h2>
+                    <p>
+                        1) Take 50 μL of the competent <i>E. coli</i> that melted on ice to the precooled 1.5 mL EP tube.
+                        <br>
+                        2) Add 2 μL plasmid to the tube and avoid touching the bottom of the EP tube. Then gently blow and stir and place the tube on the ice for 30 min.
+                        <br>
+                        3) Place the tube at 42 ℃ for 90s and transfer it to the ice immediately to bathe for 2-3 min.
+                        <br>
+                        4) Add 500 μL non-antibiotics liquid LB to the tube and incubate it in a shaker at 37 ℃ for 1h.
+                        <br>
+                        5) Take solid LB medium, add antibiotics and pour the plate.
+                        <br>
+                        6) Centrifugate at 5000 r/min for 2 min, pour out part of the supernatant, re-suspend it, spread it on a plate, and incubate it at 37 ℃.
+                    </p>
+
                     <h2><i>Escherichia coli</i> conservation</h2>
-<p>Add 800 μL 50% glycerol aqueous solution to the seed preservation tube for high-pressure steam sterilization, mix with 800μL bacteria solution, and store at -80 ℃.</p>
+                        <p>Add 800 μL 50% glycerol aqueous solution to the seed preservation tube for high-pressure steam sterilization, mix with 800μL bacteria solution, and store at -80 ℃.</p>
 
                    <h2> Transformation of <i>Synechocystis</i> PCC6803</h2>
-<p>1）Centrifuge and collect 20 mL of <i>Synechocystis</i> PCC 6803 cells in the logarithmic growth phase (OD<sub>730</sub> approximately 0.5-1.2 in a 50 mL conical flask) at 5000 rpm for 5 minutes. Discard the supernatant using a pipette (the pellet is easily detached).</p>
-<p>2）Wash the cells twice with 20 mL fresh antibiotic-free BG11 medium, and resuspend the cells in 2 mL antibiotic-free BG11 medium.</p>
-<p>3）Incubation: Transfer 1 mL the concentrated algal suspension into a new sterile EP tube, add plasmid to make the final concentration reached 10 μg/mL, mix well, expose to light at 30 μE·m-2·s-1, and incubate at 30°C for 4-5 hours.</p>
-<p>4）Spread: Spread the mixture of algal cells and DNA onto antibiotic-free BG11 plates containing nitrocellulose membranes. Expose to light at 30 μE·m-2·s-1 and incubate at 30°C for 18-24 hours.</p>
-<p>5）Transferring: Transfer the nitrocellulose membrane onto BG11 plates containing antibiotics. Expose to light at 30 μE·m-2·s-1, and culture at 30°C for approximately one week until transformants grow.</p>
-<p>6）Use a sterile toothpick to streak the transformants on new BG11 plates with the same antibiotic resistance. After algal colonies have enriched, pick single algal colonies into test tubes with 3 mL of BG11 liquid medium for further cultivation and expansion.</p>
+                        <p>1）Centrifuge and collect 20 mL of <i>Synechocystis</i> PCC 6803 cells in the logarithmic growth phase (OD<sub>730</sub> approximately 0.5-1.2 in a 50 mL conical flask) at 5000 rpm for 5 minutes. Discard the supernatant using a pipette (the pellet is easily detached).</p>
+                        <p>2）Wash the cells twice with 20 mL fresh antibiotic-free BG11 medium, and resuspend the cells in 2 mL antibiotic-free BG11 medium.</p>
+                        <p>3）Incubation: Transfer 1 mL the concentrated algal suspension into a new sterile EP tube, add plasmid to make the final concentration reached 10 μg/mL, mix well, expose to light at 30 μE·m-2·s-1, and incubate at 30°C for 4-5 hours.</p>
+                        <p>4）Spread: Spread the mixture of algal cells and DNA onto antibiotic-free BG11 plates containing nitrocellulose membranes. Expose to light at 30 μE·m-2·s-1 and incubate at 30°C for 18-24 hours.</p>
+                        <p>5）Transferring: Transfer the nitrocellulose membrane onto BG11 plates containing antibiotics. Expose to light at 30 μE·m-2·s-1, and culture at 30°C for approximately one week until transformants grow.</p>
+                        <p>6）Use a sterile toothpick to streak the transformants on new BG11 plates with the same antibiotic resistance. After algal colonies have enriched, pick single algal colonies into test tubes with 3 mL of BG11 liquid medium for further cultivation and expansion.</p>
 
                    <h2> Extraction of <i>Synechocystis</i> PCC6803 Genomic DNA </h2>
-<p>1) Take 1 mL of <i>Synechocystis</i> PCC6803 culture in a 1.5 mL EP tube, centrifuge to remove the supernatant.</p>
-<p>2) Resuspend the pellet in 500 μL of ddH2O, place the EP tube containing the Synechocystis suspension in liquid nitrogen for rapid freezing for 2 minutes, then quickly transfer it to boiling water at 100°C for approximately 3 min. Repeat this step approximately ten times until you observe the Synechocystis culture turning yellow.</p>
-<p>3) Centrifuge at 12000 rpm for 20 min, collect the supernatant for use as a template in subsequent PCR.</p>
+                        <p>1) Take 1 mL of <i>Synechocystis</i> PCC6803 culture in a 1.5 mL EP tube, centrifuge to remove the supernatant.</p>
+                        <p>2) Resuspend the pellet in 500 μL of ddH2O, place the EP tube containing the Synechocystis suspension in liquid nitrogen for rapid freezing for 2 minutes, then quickly transfer it to boiling water at 100°C for approximately 3 min. Repeat this step approximately ten times until you observe the Synechocystis culture turning yellow.</p>
+                        <p>3) Centrifuge at 12000 rpm for 20 min, collect the supernatant for use as a template in subsequent PCR.</p>
 
                     <h2><i>Synechocystis</i> PCC6803 Preservation</h2>
-<p>1) To preserve the culture, take 15 mL of cyanobacteria culture in the logarithmic growth phase (OD<sub>730</sub> approximately 0.5-0.7), and centrifuge at 6000 rpm for 5 minutes to collect the cyanobacteria cells.</p>
-<p>2) Wash the pellet twice with fresh BG11 medium (without antibiotics, as antibiotics can be toxic to cells at low temperatures).</p>
-<p>3) Resuspend the algal cells in 2 mL of BG11 medium (without antibiotics). Mix 800 μL of algal culture with 800 μL of 50% glycerol thoroughly, and then store it at -80 °C.</p>
+                        <p>1) To preserve the culture, take 15 mL of cyanobacteria culture in the logarithmic growth phase (OD<sub>730</sub> approximately 0.5-0.7), and centrifuge at 6000 rpm for 5 minutes to collect the cyanobacteria cells.</p>
+                        <p>2) Wash the pellet twice with fresh BG11 medium (without antibiotics, as antibiotics can be toxic to cells at low temperatures).</p>
+                        <p>3) Resuspend the algal cells in 2 mL of BG11 medium (without antibiotics). Mix 800 μL of algal culture with 800 μL of 50% glycerol thoroughly, and then store it at -80 °C.</p>
 
-<h2>Transfer of Plasmids from <i>E. coli</i> WM3064 to <i>S. oneidensis</i> MR-1</h2>
-<p>1) Inoculate glycerol stocks of <i>E. coli</i> WM3064 containing the desired plasmid and glycerol stocks of <i>S. oneidensis</i>  MR-1 in appropriate amounts. Inoculate <i>E. coli</i> WM3064 into liquid LB medium with DAP containing the corresponding antibiotic resistance at 37 ℃ with shaking at 180 rpm for an overnight culture. Inoculate <i>S. oneidensis</i>  MR-1 into antibiotic-free liquid LB medium at 30 ℃ with shaking at 200 rpm for an overnight culture.</p>
-<p>2) Take 500 μL of culture from both <i>E. coli</i> WM3064 containing the desired plasmid and <i>S. oneidensis</i>  MR-1. Mix them, then centrifuge at 5000 rpm for 10 minutes. Discard the supernatant and resuspend the bacterial pellets in 1 mL liquid LB medium with DAP (without antibiotics for <i>S. oneidensis</i>  MR-1). Stand at 30 ℃ for 1 hour.</p>
-<p>3) After incubation, mix the suspensions and evenly spread 100 µL onto solid LB agar plates with the corresponding antibiotic resistance (without DAP, as it inhibits the growth of <i>E. coli</i> WM3064). Incubate the plates overnight at 30 ℃ in a constant-temperature incubator.</p>
+                    <h2>Transfer of Plasmids from <i>E. coli</i> WM3064 to <i>S. oneidensis</i> MR-1</h2>
+                        <p>1) Inoculate glycerol stocks of <i>E. coli</i> WM3064 containing the desired plasmid and glycerol stocks of <i>S. oneidensis</i>  MR-1 in appropriate amounts. Inoculate <i>E. coli</i> WM3064 into liquid LB medium with DAP containing the corresponding antibiotic resistance at 37 ℃ with shaking at 180 rpm for an overnight culture. Inoculate <i>S. oneidensis</i>  MR-1 into antibiotic-free liquid LB medium at 30 ℃ with shaking at 200 rpm for an overnight culture.</p>
+                        <p>2) Take 500 μL of culture from both <i>E. coli</i> WM3064 containing the desired plasmid and <i>S. oneidensis</i>  MR-1. Mix them, then centrifuge at 5000 rpm for 10 minutes. Discard the supernatant and resuspend the bacterial pellets in 1 mL liquid LB medium with DAP (without antibiotics for <i>S. oneidensis</i>  MR-1). Stand at 30 ℃ for 1 hour.</p>
+                        <p>3) After incubation, mix the suspensions and evenly spread 100 µL onto solid LB agar plates with the corresponding antibiotic resistance (without DAP, as it inhibits the growth of <i>E. coli</i> WM3064). Incubate the plates overnight at 30 ℃ in a constant-temperature incubator.</p>
 
                     <h1 id="sectitle3">Expression experiement</h1>
-<h2>SDS-PAGE validated analysis</h2>
-<h3>Gel preparation</h3>
-<p>1) Set up the device, align the lower ends of the two glass plates on the template groove, clamp the template groove on the in-situ glue maker to the 1.0 scale and detect leakage.</p>
-<p>2) Separating gel preparation (in order): 6.9 mL redistilled water + 4.0 mL gel stock solution + 3.8 mL separating gel buffer (pH 8.8) + 0.15 mL 10% SDS + 0.15 mL 10% AP + 0.009 mL TEMED.</p>
-<p>3) Perfuse the separation glue, add water to seal, and wait for 10-30 minutes to solidify the gel.</p>
-<p>4) Pipette part of the water out, and gently suck out the remaining water with filter paper.</p>
-<p>5) Stacking gel preparation (in order): 4.1 mL redistilled water + 1.0 mL gel stock solution + 0.75 mL separating gel buffer (pH 8.8) + 0.06 mL 10% SDS + 0.06 mL 10% AP + 0.006 mL TEMED.</p>
-<p>6) Perfuse the stacking gel and insert the comb in time. The gel will solidify in about 5 minutes, and wait for the glue to polymerize for 30 minutes.</p>
-<h3>For precast gels, start from here:</h3>
-<p>7) Mix the protein solution with Loading buffer in a 1.5 mL EP tube in the proportion of 4:1. Seal and heat in a metal bath at 95℃ for 5 min to fully stretch the protein space structure.</p>
-<p>8) Perfuse the diluted electrophoresis buffer and fill it up to about 0.5cm above the glass plate in the groove, and take out the comb.</p>
-<p>9) Pipette 30 μL of the treated sample to pass through the buffer, and add the sample vertically.</p>
-<p>10) Add electrode buffer to the electrophoresis tank to make the liquid levels equal on both sides. Connect the positive and negative electrophoresis tanks of the electrophoresis apparatus at 80V for 30min.</p>
-<p>11) After entering the separation gel, 120 V was maintained, and the electrophoresis was continued for 1h at a constant voltage.</p>
-<p>12) Peel the board, and dye with 0.1% Coomassie brilliant blue R250 dyeing solution for about 20min (baking dyeing: heating and boiling in microwave oven 6-7 times).</p>
-<p>13) Soak and rinse with rinsing solution twice for 10 min each time, change ddH2O and continue rinsing until the band is clear.</p>
-<p>14) Observe the bands and analyze the results</p>
+                    <h2>
+                        Protein purification
+                    </h2>
 
+                    <p>
+                        Sample preparation
+                        <br>
+                        1) Centrifugate at 6500 rpm and 4 ℃ for 5 min.
+                        <br>
+                        2) Add the supernatant to an ultrafiltration tube, centrifugate at 4000 rpm for 15 min at 4 ℃, and take the supernatant.
+                        <br>
+                        Nickel column preparation
+                        <br>
+                        3) Prepare the Ni-NTA affinity chromatography column.
+                        <br>
+                        4) Elute the column with deionized water slowly to avoid introducing air bubbles into the column bed.
+                        <br>
+                        5) Pre-equilibrate the column with 10 times the volumes’ binding buffer.
+                        <br>
+                        Gradient buffer preparation
+                        <br>
+                        6) Buffer 1: 50 mM PBS buffer, pH 7.4.
+                        <br>
+                        <i>
+                            Preparation: 0.5 M NaH<sub>2</sub>PO<sub>4</sub> 19 mL, 0.5M Na<sub>2</sub>HPO<sub>4</sub> 81 mL, NaCl 29.3 g, add appropriate amount of water to dissolve and dilute to 1000mL.
+                        </i>
+                        <br>
+                        7) Buffer 2: 50 mM phosphate buffer, PBS buffer pH 7.4.
+                        <br>
+                        <i>
+                            Preparation: 0.5 M NaH<sub>2</sub>PO<sub>4</sub> 19 mL, 0.5M Na<sub>2</sub>HPO<sub>4</sub> 81 mL, NaCl 29.3 g, and imidazole 34g, add the appropriate amount of water to dissolve and dilute to 1000mL.
+                        </i>
+                        <br>
+                        8) Buffer 3: Buffer B with different concentrations of imidazole:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Imidazole concentration</th>
+                            <th>Buffer 1（mL）</th>
+                            <th>Buffer 2（mL）</th>
+                        </tr>
+                        <tr>
+                            <td>10 mM</td>
+                            <td>98</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>20 mM</td>
+                            <td>96</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>50 mM</td>
+                            <td>90</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>100 mM</td>
+                            <td>80</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>200 mM</td>
+                            <td>60</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>300 mM</td>
+                            <td>40</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>400 mM</td>
+                            <td>20</td>
+                            <td>80</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Sample purification
+                        <br>
+                        9) Pipette the concentrated supernatant into a Ni-NTA affinity chromatography column. Shake it slowly for 60 min at 4 ℃ on a side or horizontal shaker.
+                        <br>
+                        10) Wash with 10 times the column’s volume of binding buffer and collect the filtrate.
+                        <br>
+                        11) Elute with gradient elution respectively ( buffer 3 containing 10, 20, 50, 100, and 200 mM imidazole) and collect the elution peaks at each stage.
+                        <br>
+                        12) Column recovery: Wash with 5 times the column’s volume of pure water, and 3 times the volume of 20% ethanol.
+                    </p>
 
+`                    <h2>SDS-PAGE validated analysis</h2>
+                        <h3>Gel preparation</h3>
+                            <p>1) Set up the device, align the lower ends of the two glass plates on the template groove, clamp the template groove on the in-situ glue maker to the 1.0 scale and detect leakage.</p>
+                            <p>2) Separating gel preparation (in order): 6.9 mL redistilled water + 4.0 mL gel stock solution + 3.8 mL separating gel buffer (pH 8.8) + 0.15 mL 10% SDS + 0.15 mL 10% AP + 0.009 mL TEMED.</p>
+                            <p>3) Perfuse the separation glue, add water to seal, and wait for 10-30 minutes to solidify the gel.</p>
+                            <p>4) Pipette part of the water out, and gently suck out the remaining water with filter paper.</p>
+                            <p>5) Stacking gel preparation (in order): 4.1 mL redistilled water + 1.0 mL gel stock solution + 0.75 mL separating gel buffer (pH 8.8) + 0.06 mL 10% SDS + 0.06 mL 10% AP + 0.006 mL TEMED.</p>
+                            <p>6) Perfuse the stacking gel and insert the comb in time. The gel will solidify in about 5 minutes, and wait for the glue to polymerize for 30 minutes.</p>
+                        <h3>For precast gels, start from here:</h3>
+                            <p>7) Mix the protein solution with Loading buffer in a 1.5 mL EP tube in the proportion of 4:1. Seal and heat in a metal bath at 95℃ for 5 min to fully stretch the protein space structure.</p>
+                            <p>8) Perfuse the diluted electrophoresis buffer and fill it up to about 0.5cm above the glass plate in the groove, and take out the comb.</p>
+                            <p>9) Pipette 30 μL of the treated sample to pass through the buffer, and add the sample vertically.</p>
+                            <p>10) Add electrode buffer to the electrophoresis tank to make the liquid levels equal on both sides. Connect the positive and negative electrophoresis tanks of the electrophoresis apparatus at 80V for 30min.</p>
+                            <p>11) After entering the separation gel, 120 V was maintained, and the electrophoresis was continued for 1h at a constant voltage.</p>
+                            <p>12) Peel the board, and dye with 0.1% Coomassie brilliant blue R250 dyeing solution for about 20min (baking dyeing: heating and boiling in microwave oven 6-7 times).</p>
+                            <p>13) Soak and rinse with rinsing solution twice for 10 min each time, change ddH2O and continue rinsing until the band is clear.</p>
+                            <p>14) Observe the bands and analyze the results</p>
+
+                        <h2>
+                            Lactic acid detection by HPLC
+                        </h2>
+                        <p>
+                            1) Take 2 mL of Synechocystis culture in a EP tube, centrifuge to remove the supernatant.
+                            <br>
+                            2) Resuspend the pellet in 500 μL of ddH2O, place the EP tube containing the Synechocystis suspension in liquid nitrogen for rapid freezing for 2 minutes, then quickly transfer it to boiling water at 100°C for approximately 3 min. Repeat this step approximately ten times until you observe the Synechocystis culture turning yellow.
+                            <br>
+                            3) Centrifuge at 12000 rpm for 20 min, Collect the supernatant and pass it through the membrane.
+                            <br>
+                            4) Test the supernatant by HPLC (mobile phase: 1/1000 phosphoric acid, 10% methanol).
+                        </p>
+`
                    <h2> Measurement of Synechocystis Growth Curve</h2>
-<p>1)Inoculate 1 mL of Synechocystis with 100mL of BG11, incubate it under light.</p>
-<p>2)Every 24 hours transfer 3 mL of Synechocystis from the culture medium to EP tubes.</p>
-<p>3)Measure the absorbance at OD<sub>730</sub>.</p>
-<p>4)Plot a standard curve with growth time on the x-axis and absorbance on the y-axis.</p>
-<h2>Lactate detection by HPLC</h2>
-<p>1) Take 2 mL of Synechocystis culture in a EP tube, centrifuge to remove the supernatant.</p>
-<p>2) Resuspend the pellet in 500 μL of ddH2O, place the EP tube containing the Synechocystis suspension in liquid nitrogen for rapid freezing for 2 minutes, then quickly transfer it to boiling water at 100°C for approximately 3 min. Repeat this step approximately ten times until you observe the Synechocystis culture turning yellow.</p>
-<p>3) Centrifuge at 12000 rpm for 20 min, Collect the supernatant and pass it through the membrane</p>.
-<p>4) Test the supernatant by HPLC (mobile phase: 1/1000 phosphoric acid, 10% methanol).</p>
+                        <p>1)Inoculate 1 mL of Synechocystis with 100mL of BG11, incubate it under light.</p>
+                        <p>2)Every 24 hours transfer 3 mL of Synechocystis from the culture medium to EP tubes.</p>
+                        <p>3)Measure the absorbance at OD<sub>730</sub>.</p>
+                        <p>4)Plot a standard curve with growth time on the x-axis and absorbance on the y-axis.</p>
+                        <h2>Lactate detection by HPLC</h2>
+                        <p>1) Take 2 mL of Synechocystis culture in a EP tube, centrifuge to remove the supernatant.</p>
+                        <p>2) Resuspend the pellet in 500 μL of ddH2O, place the EP tube containing the Synechocystis suspension in liquid nitrogen for rapid freezing for 2 minutes, then quickly transfer it to boiling water at 100°C for approximately 3 min. Repeat this step approximately ten times until you observe the Synechocystis culture turning yellow.</p>
+                        <p>3) Centrifuge at 12000 rpm for 20 min, Collect the supernatant and pass it through the membrane</p>.
+                        <p>4) Test the supernatant by HPLC (mobile phase: 1/1000 phosphoric acid, 10% methanol).</p>
+
+                    <h2>
+                        Measurement of NADH
+                    </h2>
+                    <h3>
+                        1.Sample Preparation:
+                    </h3>
+                    <p>
+                        1) Take 4 mL bacteria solution to centrifuge at 6000 rpm for 5 minutes
+                        <br>
+                        2) remove the culture medium by using the pipette gun, and add 200 μL of ice-cold NAD+/NADH extraction solution. Gently pipette up and down to promote cell lysis. Cell lysis can be performed at room temperature or on ice.
+                        <br>
+                        3) Subsequently, centrifuge at 12,000 g, 4 ℃ for 5-10 minutes, and collect the supernatant as the test sample.
+                        
+                    </p>
+
+
+
+
+
+<!--                    Measurement of NADH
+1.Sample Preparation:
+1）	Take 4 mL bacteria solution to centrifuge at 6000 rpm for 5 minutes
+2）	 remove the culture medium by using the pipette gun, and add 200 μL of ice-cold NAD+/NADH extraction solution. Gently pipette up and down to promote cell lysis. Cell lysis can be performed at room temperature or on ice.
+3）	 Subsequently, centrifuge at 12,000 g, 4 ℃ for 5-10 minutes, and collect the supernatant as the test sample.
+
+2.Preparation of Reagents:
+1) Preparation of NADH Standard Solution: Take 655 μL of NADH reconstitution solution and fully dissolve 5 mg of NADH provided in this assay kit to obtain a 10 mM NADH standard solution. Divide the 10 mM NADH standard solution into aliquots and store at -80℃ in the dark.
+2) Setting up the NADH Standard Curve: Dilute the 10 mM NADH standard solution with NAD+/NADH extraction solution to create appropriate concentration gradients. For initial detection, you can set concentrations like 0, 0.25, 0.5, 1, 2, 4, 6, 8, and 10 μM, with 20 μL of standard solution added to each well in a 96-well plate. In subsequent experiments, adjust the concentration range of the standard solution as needed based on the NADH content in the samples. The 0 μM concentration point serves as a blank control and contains only NAD+/NADH extraction solution.
+3) Preparation of Alcohol Dehydrogenase Working Solution: Dilute alcohol dehydrogenase 45-fold with reaction buffer. For each standard or sample, you will need 90 μL of alcohol dehydrogenase working solution. Prepare the appropriate amount of working solution based on the number of standard and sample measurements needed, and use it immediately.
+
+3.Sample Analysis:
+-->
+
+
+
 
 
                    <h2> Measurement of Co-culture Growth Curve</h2>
-<p>1) Inoculate 1 mL of Synechocystis with 100mL of MBG11, cultivate it under light until the OD<sub>730</sub> reaches 1.2.</p>
-<p>2) Transfer the medium to the centrifuge tube, centrifugate at 5000 rpm for 10 min.</p>
-<p>3) Carefully collect the supernatant, inoculate it with 1mL shewanella.</p>
-<p>2) Every 4 hours transfer 3 mL of Shewanella from the culture medium to EP tubes.</p>
-<p>3) Measure the absorbance at OD<sub>600</sub>.</p>
-<p>4) Plot a standard curve with growth time on the x-axis and absorbance on the y-axis.
-</p>
+                        <p>1) Inoculate 1 mL of Synechocystis with 100mL of MBG11, cultivate it under light until the OD<sub>730</sub> reaches 1.2.</p>
+                        <p>2) Transfer the medium to the centrifuge tube, centrifugate at 5000 rpm for 10 min.</p>
+                        <p>3) Carefully collect the supernatant, inoculate it with 1mL shewanella.</p>
+                        <p>2) Every 4 hours transfer 3 mL of Shewanella from the culture medium to EP tubes.</p>
+                        <p>3) Measure the absorbance at OD<sub>600</sub>.</p>
+                        <p>4) Plot a standard curve with growth time on the x-axis and absorbance on the y-axis.
+                        </p>
 
-<h2>Measurement of Electricity Production</h2>
-<p>1) Inoculate the overnight cultured Shewanella bacteria into 150 mL of LB medium and grown at 30°C with shaking at 200 rpm until the OD600 reached 0.6-0.8.</p>
-<p>2) Centrifugate to collect the cultured cells, wash three times with M9 buffer and then resuspend in 140 mL of anode solution (5% LB + 95% M9 buffer + 18 mM lactic acid). Kanamycin at a concentration of 50 μg/mL was added to maintain constant culture conditions, and 0.1 mM IPTG was used as an inducer to initiate gene expression.</p>
-<p>3) A dual-chamber H-type Microbial Fuel Cell (MFC) was used in our experiments, with the anode (working volume 140 mL) and cathode chambers separated by a DuPont Nafion 117 proton exchange membrane. Carbon cloth was used as the anode (2.5 cm × 2.5 cm) and cathode (2.5 cm × 3 cm) electrodes. The cathode solution was prepared with 50 mM K3[Fe(CN)6], 50 mM K2HPO4, and 50 mM KH2PO4. A 2 kΩ external resistor was used to complete the external circuit.</p>
-<p>4) Use a digital multimeter to measure the output voltage of the microbial fuel cell.</p>
+                    <h2>Measurement of Electricity Production</h2>
+                        <p>1) Inoculate the overnight cultured Shewanella bacteria into 150 mL of LB medium and grown at 30°C with shaking at 200 rpm until the OD600 reached 0.6-0.8.</p>
+                        <p>2) Centrifugate to collect the cultured cells, wash three times with M9 buffer and then resuspend in 140 mL of anode solution (5% LB + 95% M9 buffer + 18 mM lactic acid). Kanamycin at a concentration of 50 μg/mL was added to maintain constant culture conditions, and 0.1 mM IPTG was used as an inducer to initiate gene expression.</p>
+                        <p>3) A dual-chamber H-type Microbial Fuel Cell (MFC) was used in our experiments, with the anode (working volume 140 mL) and cathode chambers separated by a DuPont Nafion 117 proton exchange membrane. Carbon cloth was used as the anode (2.5 cm × 2.5 cm) and cathode (2.5 cm × 3 cm) electrodes. The cathode solution was prepared with 50 mM K3[Fe(CN)6], 50 mM K2HPO4, and 50 mM KH2PO4. A 2 kΩ external resistor was used to complete the external circuit.</p>
+                        <p>4) Use a digital multimeter to measure the output voltage of the microbial fuel cell.</p>
 
-<h3>Preparation of Solutions</h3>
-<p>1) 1 M Sodium Lactate Solution: Weigh 18.68 g of sodium lactate solution with a mass fraction of 60% and dissolve it in an appropriate amount of ddH2O. Bring the volume up to 100 mL, sterilize, cool to room temperature, and store at 4°C .</p>
-<p>2) 5× M9 Stock Solution: Dissolve 2.5 g NaCl, 5 g NH4Cl, 15 g KH2PO4, and 30 g Na2HPO4 in an appropriate amount of ddH2O. Bring the volume up to 1 L, sterilize, cool to room temperature, and store at 4°C.</p>
-<p>3) 1 M HCl Solution: Take 83 mL of 37% HCl solution and bring it up to 1 L with water. Store at room temperature.</p>
+                        <h3>Preparation of Solutions</h3>
+                            <p>1) 1 M Sodium Lactate Solution: Weigh 18.68 g of sodium lactate solution with a mass fraction of 60% and dissolve it in an appropriate amount of ddH2O. Bring the volume up to 100 mL, sterilize, cool to room temperature, and store at 4°C .</p>
+                            <p>2) 5× M9 Stock Solution: Dissolve 2.5 g NaCl, 5 g NH4Cl, 15 g KH2PO4, and 30 g Na2HPO4 in an appropriate amount of ddH2O. Bring the volume up to 1 L, sterilize, cool to room temperature, and store at 4°C.</p>
+                            <p>3) 1 M HCl Solution: Take 83 mL of 37% HCl solution and bring it up to 1 L with water. Store at room temperature.</p>
 
 
                 </article>
