@@ -59,7 +59,7 @@
         margin: 10px;
     }
     body{
-      margin=0;
+      margin:0;
     }
 </style>
 
@@ -76,8 +76,8 @@
     <link href="static/bootstrap.min.css" rel="stylesheet">
 
     <!-- JQuery Js -->
-    <script type="text/javascript" src="static/jquery.js")}}" ></script>
-    <script type="text/javascript" src="static/jqueryrotate.js")}}" ></script>
+    <script type="text/javascript" src="static/jquery.js")}} ></script>
+    <script type="text/javascript" src="static/jqueryrotate.js")}} ></script>
 
 
     <!-- Custom CSS -->
@@ -221,19 +221,9 @@
         <div class="catalogue">
             <h4>content</h4>
             <ul>
-                <li><a href="#sectitle1">Introduction</a></li>
-                <li><a href="#sectitle2">Project Safety</a></li>
-                <ul>
-                  <li><a href="#list1">  Microbiological Safety </a></li>
-                  <li><a href="#list2"> Reagents Safety</a> </li>
-                  <li><a href="#list3"> Working Environment Safety </a></li>
-                </ul>
-                <li><a href="#sectitle3">Lab Safety</a></li>
-                <ul>
-                  <li><a href="#list4"> Biosafety Laws in China</a></li>
-                  <li><a href="#list5"> Training</a></li>
-                  <li><a href="#list6"> Basic Lab Rules</a></li>
-                </ul>
+                <li><a href="#sectitle1">Culture medium</a></li>
+                <li><a href="#sectitle2">Molecular experiments</a></li>
+                <li><a href="#sectitle3">Expression experiement</a></li>
             </ul>
         </div>
     <div class="main content">
@@ -241,45 +231,210 @@
             <div class="col-lg-1"></div>
             <div class="content col-lg-10">
                 <article>
-                   <h1 class="sectitle title-cover" id="sectitle1">Introduction</h1>
-                        <p>Our team consistently believes that safety is a prerequisite and guarantee for the success of a project. Therefore, awareness of safety is implemented throughout the entire project. Our emphasis on safety is evident in the research into production environments, and the assurance of experimental safety.</p>
-                    <h1 class="sectitle title-cover" id="sectitle2">Project Safety</h1>
-                    <h2 class="subtitle" id="list1">   Microbiological Safety</h2>
-                        <p>a)	According to ATCC, the chassis organisms we have selected, such as Synechocystis sp. PCC 6803 and Shewanella oneidensis MR-1, can be used in a BSL 1 laboratory. The general principles of microbiological and biomedical laboratory biosafety specify that BSL 1 is appropriate for microorganisms known to have no pathogenic effects on healthy adults.</p>
-                        <img src="https://static.igem.wiki/teams/4595/wiki/safety/safety4-1.png" alt="" class="normimg" >
-                        <i class="imgexplain">Fig.1. Microbiological Safety(MR-1) and Microbiological Safety(PCC 6803)</i>
-                        <p>b)	E.coli Top10 and E.coli WM3064 are used in our experimental processes. Top10 is a preferred choice for cloning vectors, while WM3064 serves as a transfer vector tool. Our use of the bacteria strictly adheres to experimental operating procedures and laboratory safety guidelines.</p>
-                        <h2 class="subtitle" id="list2">  Reagents Safety</h2>
-                       <img src="https://static.igem.wiki/teams/4595/wiki/safety/safety3-1.png" alt="" class="normimg">
-<p>All reagents are strictly used, stored in accordance with relevant regulations.</p>
-<h2 class="subtitle" id="list3">   Working Environment Safety</h2>
-                        <p>Waste gases from the hardware are discharged after passing through filter membrane, and the UV lamp is installed at the gas outlet of the thermal power station to prevent the release of engineered bacteria. Used culture media can be sterilized using excess heat from the power plant to prevent the escape of engineered bacteria from residual culture media.</p>
-                    <h1 class="sectitle title-cover" id="sectitle3">Lab Safety</h1>
-                    <h2 class="subtitle" id="list4">   
-                        Biosafety Laws in China
-                    </h2> 
-                        <p>AAll of our project personnel strictly comply with the Biosafety Law of the People’s Republic of China implemented in 2021.</p>
-                    <h2 class="subtitle" id="list5">   
-                       Training
+                    <h1 id="sectitle1">Culture medium</h1>
+
+                    <h2>
+                        LB (Luria-Bertani)
                     </h2>
-                        <p>The personnel in the project have all undergone training on relevant safety guidelines before conducting experiments. They have also participated in centralized training sessions on experimental skills and related precautions.</p>
-                    <h2 class="subtitle" id="list6">
-                        Basic Lab Rules
+
+                    <table>
+                        <tr>
+                            <th>Component</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>NaCl</td>
+                            <td>10 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>Tryptone</td>
+                            <td>10 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>Yeast Extract</td>
+                            <td>5 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>Agar(solid)</td>
+                            <td>20 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>DAP</td>
+                            <td>0.057 g/L</td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        The medium for cultivating only <i>E. coli</i> WM3064 requires the addition of DAP.
+                    </p>
+
+                    <h2>
+                        TB (Terrific Broth)
                     </h2>
-                        <p>a) Before starting work, it is essential to clearly identify the location and operating procedures of fire extinguishing equipment, electrical switches, and other facilities. Familiarity with emergency response measures and procedures is also necessary.</p>
-<p>
-b) When entering the laboratory, lab coats must be worn, and avoid wearing open shoes. Lab coats should be removed when leaving the laboratory.
-eanliness and orderliness in the laboratory, and promptly clean up or dispose of waste materials.
-</p>
- <p>
- c) When conducting experiments that may pose a risk, appropriate personal protective equipment must be worn as per the situation. This may include wearing safety goggles, face masks, and protective gloves.
- </p>
-<p>
-  d) Smoking, eating, and sleeping are strictly prohibited inside the laboratory.
-  </p>
-<p>
-  e)  Maintain cleanliness and orderliness in the laboratory, and promptly clean up or dispose of waste materials. 
-  </p>                      
+                    <table>
+                        <tr>
+                            <th>Component</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>KH<sub>2</sub>PO<sub>4</sub></td>
+                            <td>2.31 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>K<sub>2</sub>HPO<sub>4</sub></td>
+                            <td>12.54 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>Tryptone</td>
+                            <td>12 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>Yeast Extract</td>
+                            <td>24 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>50% Glycerin</td>
+                            <td>8 mL/L</td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        BG11（Mother Solution 1000X）
+                    </h2>
+                    <table>
+                        <tr>
+                            <th>Mother Solution</th>
+                            <th>Component</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>K<sub>2</sub>HPO<sub>4</sub>·3H<sub>2</sub>O</td>
+                            <td>40 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MgSO<sub>4</sub>·7H<sub>2</sub>O</td>
+                            <td>75 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>CaCl<sub>2</sub>·2H<sub>2</sub>O</td>
+                            <td>36 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Citric acid</td>
+                            <td>6 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ferric ammonium citrate</td>
+                            <td>6 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>EDTA·2Na</td>
+                            <td>1 g/L</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Na<sub>2</sub>CO<sub>3</sub></td>
+                            <td>20 g/L</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">8</td>
+                            <td>H<sub>3</sub>BO<sub>3</sub></td>
+                            <td>2.86 g/L</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>MnCl<sub>2</sub>·4H<sub>2</sub>O</td>
+                            <td>1.81 g/L</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ZnSO<sub>4</sub>·7H<sub>2</sub>O</td>
+                            <td>0.222 g/L</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Na<sub>2</sub>MoO<sub>4</sub>·2H<sub>2</sub>O</td>
+                            <td>0.39 g/L</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>CoCl<sub>2</sub>·6H<sub>2</sub>O</td>
+                            <td>0.01 g/L</td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        According to the table above, prepare 8 different mother solutions, store them at 4 ℃, with mother solutions 1 and 5 being separately sterilized.
+                        <br>
+                        Taking the example of preparing 1 L of BG-11 medium: First, measure 994 mL of ddH<sub>2</sub>O, add 1 mL of each of mother solutions 2, 3, 4, 6, 7, and 8, and mix well. Then, add 1.5 g of NaNO<sub>3</sub>, dissolve it by mixing, and sterilize after mixing. When the medium temperature has cooled to room temperature, add mother solutions 1 and 5 in a 1:1000 ratio, shake well, and add the required concentration of antibiotics.
+                        <br>
+                        If preparing solid medium, add agar to a final concentration of 1.5％，and then sterilize under high pressure. When the medium temperature has cooled to 55 ℃, add the various components according to the table, mix well, and pour the plates, adding the appropriate antibiotic concentrations as needed.
+                    </p>
+
+                    <table>
+                        <tr>
+                            Mother Solution Proportion
+                        </tr>
+                        <tr>
+                            Final Concentration
+                        </tr>
+                        <tr>
+                            Mother Solution 1
+                        </tr>
+                        <tr>
+                            1:1000
+                        </tr>
+                        <tr>
+                            0.04 g/L
+                        </tr>
+                        <tr>
+                            Mother Solution 5
+                        </tr>
+                        <tr>
+                            1:1000
+                        </tr>
+                        <tr>
+                            0.006 g/L
+                        </tr>
+                        <tr>
+                            1M TES-NaOH (pH 8.0)
+                        </tr>
+                        <tr>
+                            1.6：200
+                        </tr>
+                        <tr>
+                            0.008 M
+                        </tr>
+                        <tr>
+                            30% Na<sub>2</sub>S<sub>2</sub>O<sub>3</sub>
+                        </tr>
+                        <tr>
+                            2：200
+                        </tr>
+                        <tr>
+                            3 g/L
+                        </tr>
+                    </table>
+
+            <!--Mother Solution	Proportion	Final Concentration
+Mother Solution 1	1:1000	0.04 g/L
+Mother Solution 5	1:1000	0.006 g/L
+1M TES-NaOH (pH 8.0)	1.6：200	0.008 M
+30% Na2S2O3	2：200	3 g/L
+
+
+
+-->
+                    <h1 id="sectitle2">Molecular experiments</h1>
+
+                    <h1 id="sectitle3">Expression experiement</h1>
+
                 </article>
             </div>
         </div>
