@@ -255,7 +255,7 @@
                     图注插入用i标签，class设置为imgexplain
                     -->
                 <h2 >
-                    A. Overview
+                    1.1 Overview
                 </h2>
 
                 <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image1.png"
@@ -276,13 +276,13 @@
                 </p>
 
                 <h2>
-                    B. Structure
+                    1.2 Structure
                 </h2>
                   <p>
                       The fermenter innovatively puts forward the idea of "building block" fermenter, through the modular design, improves the operation portability and environmental adaptability of the fermentation system, and customizes the corresponding solutions for different fermentation scenarios to ensure maximum efficiency. The system provides optional modules including: stirring module, defoaming module, temperature control module, air distribution module, pH monitoring module, aerobic/anaerobic module, lightless/lighted module, and monoclonal/synergistic module. Another advantage of the modular design is the cost, which only requires the price of normal 3d printing. After obtaining the whole fermentation model family, the parts can be replaced at will, realizing the completion of industrial simulation at a cheaper price and higher fit.
                     </p>
                 <h3>
-                    1. Cyanobacteria Part`
+                    1.2.1 Cyanobacteria Part`
                 </h3>
 
                   <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image4.png"
@@ -295,7 +295,7 @@
                     </p>
 
                     <h3>
-                        2. Shewanella Anode Tank
+                        1.2.2 Shewanella Anode Tank
                     </h3>
 
                   <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image5.png"
@@ -308,7 +308,7 @@
                     </p>
 
                     <h3>
-                        3. Cathode Tank
+                        1.2.3 Cathode Tank
                     </h3>
 
                   <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image6.png"
@@ -321,11 +321,11 @@
                     </p>
 
                     <h3>
-                        4. Other Components
+                        1.2.4 Other Components
                     </h3>
 
                   <h4>
-                        ①Filter Plates and Flow Switches
+                        1)Filter Plates and Flow Switches
                     </h4>
 
                   <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image7.png"
@@ -359,7 +359,7 @@
                     </p>
 
                     <h4>
-                        ②Connecting Pipe
+                        2)Connecting Pipe
                     </h4>
 
                   <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image11.png"
@@ -372,7 +372,7 @@
                   </p>
 
                   <h4>
-                      ③Threaded cover
+                      3)Threaded cover
                   </h4>
                   <img
                     src="https://static.igem.wiki/teams/4595/wiki/hardware/image12.png"
@@ -398,7 +398,7 @@
                   </p>
 
                   <h3>
-                      Procedures of Use
+                      1.2.5 Procedures of Use
                   </h3>
                   <li>
                       <ul>①Assemble the proton membrane and connect the cathode and anode tanks.</ul>
@@ -407,9 +407,9 @@
                       <ul>④Plug in the warm water, turn on the flow switch properly and done!</ul>
                   </li>
 
-                  <h3>
-                      C. Electric Part
-                  </h3>
+                  <h2>
+                      1.3 Electric Part
+                  </h2>
                   <p>
                     Our hardware also needs to realize the detection of the growth condition of the medium, such as temperature, ph value, etc., and also according to the temperature to control the in and out of the hot air to ensure the appropriate temperature of the medium, as well as according to the ph value to control the replenishment and flow of the medium.
                       <br>
@@ -423,7 +423,7 @@
                   <i class="imgexplain">Figure 15 The iring diagram on the breadboard</i>
 
                   <h4>
-                      Temperature Acquisition Section
+                      1.3.1 Temperature Acquisition Section
                   </h4>
                   <p>
                         In the temperature acquisition section, we have used DS18B20 module.The DS18B20 module provides 12-bit temperature readout with a temperature range of -55° to 125°. The temperature information is sent to and from the DS18B20 via a single wire interface. Therefore, only one wire (and ground) needs to be connected from the CPU to the DS18B20. The power required to read, write, and complete temperature conversions can be supplied from the data line itself, and no external power supply is required.
@@ -440,7 +440,7 @@
                     </p>
 
                     <h4>
-                        PH Detection Section
+                        1.3.2 PH Detection Section
                     </h4>
                     <p>
                         For the PH detection part we chose a PH sensor module.
@@ -453,7 +453,7 @@
                   <i class="imgexplain">Figure 17 PH sensor module</i>
 
                   <p>
-                        The module pins are defined as follows：
+                       1.3.3 The module pins are defined as follows：
                   </p>
                   <i class="imgexplain">Table 1 Module pins</i>
                     <img src="https://static.igem.wiki/teams/4595/wiki/hardware/table1.png"
@@ -465,7 +465,7 @@
                     </p>
 
                     <h4>
-                        Solenoid Valve Control Section
+                       1.3.4 Solenoid Valve Control Section
                     </h4>
                     <p>
                         Our solenoid valve is a normally closed type, with an operating voltage of DC12V.
@@ -484,7 +484,7 @@
                   </p>
 
                   <h4>
-                      Main Function Code
+                     1.3.5 Main Function Code
                   </h4>
                     <p>
                         The main function code is as follows:
@@ -502,7 +502,7 @@
                   <i class="imgexplain">Figure 19 ph Calibration Curve</i>
 
                   <h5>
-                      Other:
+                     1.3.6 Other:
                   </h5>
                     <p>
                         The appendix should have
@@ -522,16 +522,16 @@
 
 
 <!--                  This is the end of the video frame.-->
-                <h3>
-                    D. Mathematical modeling part
-                </h3>
+                <h2>
+                    1.4 Mathematical modeling part
+                </h2>
                   <p>
                       The cyanobacterium Synechocystis sp. PCC 6803 was the first phototrophic organism to be fully sequenced. As a result of the genome sequencing and the establishment of various databases, Synechocystis sp. PCC 6803 provides an extremely versatile and easy model to study the genetic systems of photosynthetic organisms. Light energy is the most important energy substrate for the growth of algal cells, so how to make Synechocystis sp. PCC 6803 use light energy reasonably and efficiently is one of the major problems that our hardware needs to solve. By means of literature search and experimental verification, we fit the cell growth curve and the light attenuation curve in the bacterial solution.
                   </p>
 
-                  <h4>
-                      Fitting of light attenuation curve
-                  </h4>
+                  <h3>
+                     1.4.1 Fitting of light attenuation curve
+                  </h3>
                     <p>
                         In the mixed homogeneous microalgae culture system, the light attenuation caused by algal fluid in the concentration range is generally considered to conform to such Lambert-Beer law:
                         <br>
@@ -562,9 +562,9 @@
                         Then, we plugged in the transmittance of our materialcan (0.93) and further introduced the most suitable amount of liquid in our fermentation tank is 4.719-11.730 cm. Under these conditions, we chose 8 cm as our filling volume.
                   </p>
 
-                    <h4>
-                        Construction of cell growth dynamics model
-                    </h4>
+                    <h3>
+                       1.4.2 Construction of cell growth dynamics model
+                    </h3>
                   <p>
                         We cultured the cells in a 250ml shaker bottle with a liquid volume of 150ml, at a culture temperature of 30℃ and incident light intensity of 100μE/(m2·s). Since the algal cell biomass curve is similar to the cell growth curve during microbial fermentation, we can describe the algal cell growth with the help of microbial fermentation growth kinetics. Using light energy as a substrate, the growth rate of cells in the growth phase can be expressed as follows by Logistic equation description:
                         <br>
@@ -602,9 +602,9 @@
                         Therefore, we constructed a set of miniature modular fermentation equipment system, through the research of the current pilot and even the production of fermentation equipment and reasonably reduced and modularized to build a set of miniature fermentation system, so as to be able to simulate the effect of the pilot and even production in the laboratory. The fermentation equipment system consists of several modules, through the replacement of different parts within the module, and then realize the culture of different strains and under different conditions, and accordingly build a set of fermentation system for our co-culture system.
                   </p>
 
-                  <h3>
-                        A. Mixing Module
-                  </h3>
+                  <h2>
+                        2.1 Mixing Module
+                  </h2>
                   <p>
                         In the fermentation process, due to the different viscosity of different liquids and other reasons, it may lead to different reaction degrees in different positions in the tank, so there is a need to increase the contact area by stirring and accelerate the reaction. Moreover, in order to better simulate the industrial application scenario, we set up two models of six-flat-blade turbine and six-curved blade turbine, both of which can withstand different stress levels. Users can choose the right mixing paddle according to the liquid viscosity in the tank. If the speed needs to be increased, the electric control parameters can be adjusted to achieve the purpose.
                   </p>
@@ -619,9 +619,9 @@
                          alt="Figure 22 Flat Page Propeller">
                   <i class="imgexplain">Figure 22 Flat Page Propeller</i>
 
-                  <h3>
-                        B. Antifoam Module
-                  </h3>
+                  <h2>
+                        2.2 Antifoam Module
+                  </h2>
                     <p>
                             During the reaction process, especially when stirred, because some fermentation media themselves contain many surface active substances, and the strain reaction will also produce surface active substances, all tanks are prone to foam. Foam can reduce production capacity, cause waste of raw materials, affect bacterial respiration, and even lead to bacterial contamination. So we built two defoaming devices to ensure fermentation efficiency, uniformity and safety. The rake type is simple and easy to use, but the defoaming effect is general; The rotary disk defoamer is more effective but requires electricity, and the user can freely choose according to the number of bubbles.
                     </p>
@@ -636,9 +636,9 @@
                          alt="Figure 24 Rotary Disc Defoamer">
                   <i class="imgexplain">Figure 24 Rotary Disc Defoamer</i>
 
-                  <h3>
-                        C. Temperature control module
-                  </h3>
+                  <h2>
+                        2.3 Temperature control module
+                  </h2>
                   <p>
                         During fermentation, some strains have higher requirements for temperature, so it is necessary to control the temperature in the tank to ensure the fermentation environment. We built two kinds of temperature control tube and temperature control coil to better fit the fermenter.
                   </p>
@@ -653,9 +653,9 @@
                          alt="Figure 26 Temperature control tube">
                   <i class="imgexplain">Figure 26 Temperature control tube</i>
 
-                  <h4>
-                      Air Distribution Module
-                  </h4>
+                  <h2>
+                     2.4 Air Distribution Module
+                  </h2>
 
                   <p>
                         In our fermenter, a single orifice tube type gas intake device has been used. If a more effective ventilation device is required, the annular air distribution tube below can also be used. The device can reduce the diameter of bubbles entering the culture medium, increase the dissolution amount, increase the contact area, and better ensure the gas supply and reaction.
@@ -666,9 +666,9 @@
                          alt="Figure 27 Annular Air Distribution Tubes">
                   <i class="imgexplain">Figure 27 Annular Air Distribution Tubes</i>
 
-                    <h4>
-                        Other tank modules
-                    </h4>
+                    <h2>
+                       2.5 Other tank modules
+                    </h2>
                     <p>
                         During co-bacterial culture, the upper fermenter can select the printing material according to whether the light is needed. Below is an example of a fermenter that does not require light.
                     </p>
