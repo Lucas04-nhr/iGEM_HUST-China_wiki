@@ -358,9 +358,9 @@
                       The bottom-most No.2 flow switch has a similar fan-shaped structure as that of the No.1 flow switch, with its lower thread connecting to the Shewanella anode tank.Its side surface also has a conduit, which can ensure that when the flow switch is closed, gas can be introduced into the Cyanobacteria fermenter to maintain an anaerobic environment.
                     </p>
 
-                    <h4>
-                        2)Connecting Pipe
-                    </h4>
+                    <h5>
+                        2) Connecting Pipe
+                    </h5>
 
                   <img src="https://static.igem.wiki/teams/4595/wiki/hardware/image11.png"
                      class="normimg"
@@ -371,9 +371,9 @@
                       We also have a separate connecting pipe designed between the cathode tank and anode tank. It has completely symmetrical positive-reverse thread structure. And since the screw starting point of the cathode and anode tanks is the same but with opposite rotation direction, we can separate them without rotating the tank body to replace the proton membrane.
                   </p>
 
-                  <h4>
-                      3)Threaded cover
-                  </h4>
+                  <h5>
+                      3) Threaded cover
+                  </h5>
                   <img
                     src="https://static.igem.wiki/teams/4595/wiki/hardware/image12.png"
                     class="normimg"
@@ -400,12 +400,12 @@
                   <h3>
                       1.2.5 Procedures of Use
                   </h3>
-                  <li>
-                      <ul>①Assemble the proton membrane and connect the cathode and anode tanks.</ul>
-                      <ul>②Add the electrolyte and Shewanella,cover the cathode and anode cover as well.</ul>
-                      <ul>③Install the filter membrane, connect the Cyanobacteria fermenter and anode tank, turn off the flow switch and connect the carbon dioxide inlet and outlet to add the Cyanobacteria.</ul>
-                      <ul>④Plug in the warm water, turn on the flow switch properly and done!</ul>
-                  </li>
+                  
+                      <p>1) Assemble the proton membrane and connect the cathode and anode tanks.</p>
+                      <p>2) Add the electrolyte and Shewanella,cover the cathode and anode cover as well.</p>
+                      <p>3)Install the filter membrane, connect the Cyanobacteria fermenter and anode tank, turn off the flow switch and connect the carbon dioxide inlet and outlet to add the Cyanobacteria.</p>
+                      <p>4)Plug in the warm water, turn on the flow switch properly and done!</p>
+               
 
                   <h2>
                       1.3 Electric Part
@@ -422,9 +422,9 @@
                      alt="Figure 15 Wiring diagram on the breadboard">
                   <i class="imgexplain">Figure 15 The iring diagram on the breadboard</i>
 
-                  <h4>
+                  <h3>
                       1.3.1 Temperature Acquisition Section
-                  </h4>
+                  </h3>
                   <p>
                         In the temperature acquisition section, we have used DS18B20 module.The DS18B20 module provides 12-bit temperature readout with a temperature range of -55° to 125°. The temperature information is sent to and from the DS18B20 via a single wire interface. Therefore, only one wire (and ground) needs to be connected from the CPU to the DS18B20. The power required to read, write, and complete temperature conversions can be supplied from the data line itself, and no external power supply is required.
                         <br>
@@ -439,9 +439,9 @@
                         For the hardware connection, the DS18B20 needs to be connected to a temperature probe for data acquisition, and itself needs to be connected to a 3-5V supply, ground, and a data cable.
                     </p>
 
-                    <h4>
+                    <h3>
                         1.3.2 PH Detection Section
-                    </h4>
+                    </h3>
                     <p>
                         For the PH detection part we chose a PH sensor module.
                         <br>
@@ -452,9 +452,9 @@
                          alt="Figure 17 PH sensor module">
                   <i class="imgexplain">Figure 17 PH sensor module</i>
 
-                  <p>
+                  <h3>
                        1.3.3 The module pins are defined as follows：
-                  </p>
+                  </h3>
                   <i class="imgexplain">Table 1 Module pins</i>
                     <img src="https://static.igem.wiki/teams/4595/wiki/hardware/table1.png"
                             class="normimg"
@@ -464,9 +464,9 @@
                        Before using the PH sensor, we need to use the two-point calibration method. Since our medium environment is acidic, the PO port output voltage can be measured in a standard buffer with a pH of 6.86 and a pH of 4.00, and then a V-PH curve can be fitted in EXCEL based on these two points, from which the pH value of the medium can be calculated.
                     </p>
 
-                    <h4>
+                    <h3>
                        1.3.4 Solenoid Valve Control Section
-                    </h4>
+                    </h3>
                     <p>
                         Our solenoid valve is a normally closed type, with an operating voltage of DC12V.
                         <br>
@@ -483,9 +483,9 @@
                         The value of PA6 determines the opening and closing of the solenoid valve, and the microcontroller judges the value of PA6 according to the acquired information such as temperature and PH value to realize the entry and exit of hot air and the replenishment of culture medium.
                   </p>
 
-                  <h4>
+                  <h3>
                      1.3.5 Main Function Code
-                  </h4>
+                  </h3>
                     <p>
                         The main function code is as follows:
                     </p>
@@ -501,12 +501,11 @@
                          alt="Figure 19 ph Calibration Curve">
                   <i class="imgexplain">Figure 19 ph Calibration Curve</i>
 
-                  <h5>
+                  <h3>
                      1.3.6 Other:
-                  </h5>
+                  </h3>
                     <p>
                         The appendix should have
-                        <br>
                         Keil project files;
                     </p>
                   <br>
