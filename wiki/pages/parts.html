@@ -1,6 +1,8 @@
 <head>
   <meta charset="utf-8">
-  <title>Design | HUST-China-igem 2023</title>
+  <doctype content="text/html; charset=UTF-8"></doctype>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <title>Parts | HUST-China-igem 2023</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="static/normalize.css" rel="stylesheet" type="text/css">
@@ -9,9 +11,20 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <script src="static/jquery.js" type="text/javascript"></script>
   <script src="static/webfont.js" type="text/javascript"></script>
-  <script src="static/webflow.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    console.log("MathJax loaded successfully");
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
   <script type="text/javascript">
     WebFont.load({
       google: {
@@ -26,11 +39,7 @@
       n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
     }(window, document);
   </script>
-  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon">
-
-
-<style>
+  <style>
     #subtitle1:target {
         padding-top: 60px;
         margin-top: -60px;
@@ -59,9 +68,10 @@
         margin: 10px;
     }
     body{
-      margin=0;
+      margin:0;
     }
 </style>
+</head>
 
 <!doctype html>
 <html lang="en">
@@ -69,51 +79,50 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
-    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+<!--    The icon below can't be reached.-->
+<!--    <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2023.svg">-->
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 
     <!-- Bootstrap CSS -->
     <link href="static/bootstrap.min.css" rel="stylesheet">
 
     <!-- JQuery Js -->
-    <script type="text/javascript" src="static/jquery.js")}}" ></script>
-    <script type="text/javascript" src="static/jqueryrotate.js")}}" ></script>
+<!--    <script type="text/javascript" src="static/jquery.js")}} ></script>-->
+<!--    <script type="text/javascript" src="static/jqueryrotate.js")}} ></script>-->
 
 
     <!-- Custom CSS -->
     <link href="static/style.css" rel="stylesheet">
 
     <!-- Font style-->
-    
-    <title> | HUST-China - iGEM 2022</title>
+
+    <title> Notebook | HUST-China - iGEM 2022</title>
     <style>
       @font-face {
 	font-family:Silkscreen;
-	src: url(static/Silkscreen-Regular.ttf);
+	src: url(static/fonts/Silkscreen-Regular.ttf);
 }
 @font-face {
     font-family: Montserrat;
-    src: url(static/Montserrat-Regular.ttf);
+    src: url(static/fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: Mukta;
-    src: url(static/Mukta-Regular.ttf);
+    src: url(static/fonts/Mukta-Regular.ttf);
 }
 
 @font-face {
     font-family: Ubuntu;
-    src: url(static/Ubuntu-Regular.ttf);
+    src: url(static/fonts/Ubuntu-Regular.ttf);
 }
 
 @font-face {
     font-family: Josefin_Sans;
-    src: url(static/JosefinSans-Regular.ttf);
+    src: url(static/fonts/JosefinSans-Regular.ttf);
 }
 
       </style>
-    
-
 
   </head>
 <body class="body">
@@ -361,19 +370,11 @@
                       </table>
                     <h1 class="sectitle title-cover" id="sectitle3">Section 3 : Improvement</h1>
                         <p>
-                          Fusion Protein (FP) and LanM(Lanmodulin) are proteins binding Lanthanide that can be used to purify the 
-                          water polluted by REE mining industry. This basic part has been registered by iGEM2017_HUST as BBa_K2336033. 
-                          We improved its function and registered as new parts BBa_K4468007 and BBa_K4468006.<br>
-                          Firstly, we optimized the codon of this gene according to the codon preference to improve 
-                          its expression level.<br>
-                          Secondly, research shows that LanM is a strong Lanthanide binding protein with three strong binding site. 
-                          we construct a LanM-dLBT fusion proteins named FP and expressed it, hoping that they could show a better 
-                          binding activity. We also want to recycle the engineered strain for the sake of safety and economy concern. 
-                          So we bind the Si-tag with the protein to bind the cell to SiO<sub>2</sub> in nature sand.<br>
-                          Then, we predicted the 3D structure of FP. The docking result shows that the Tb<sup>3+</sup> have an 
-                          affinity to the EF-hand domains of the fusion protein.<br>
-                          Therefore, we started to build the regulation system and achieved success in expression. 
-                        </p>
+                          In this year, we tried to increase our target products, lactate and electricity, by modulating the total amount of intracellular NAD(H/+). In cyanobacteria we tried to introduce OmcS, an electron transfer protein to achieve an increase in NADH content, which in turn provides more cofactors for lactate dehydrogenase to catalyze more lactate. In <i>Shewanella oneidensis</i> MR-1, we attempted to enhance NADH synthesis by adding new synthetic pathways and increasing the activity of enzymes in the pathway, including nadE, a previously registered part. We performed codon optimization for <i>Shewanella oneidensis</i> MR-1 and further analyzed and predicted the protein structure to provide a reliable basis for experimental research and development, and registered it as a new part BBa_K4595015.</p>
+<p>Finally, we successfully constructed four major plasmids, successfully verified the expression of relevant genes in some of them, and detected the enhancement of lactate generated by cyanobacteria with the power production of <i>Shewanella oneidensis</i> MR-1.</p>
+
+                         
+                        
                     <h1 class="sectitle title-cover" id="sectitle4">Section 4 : Composite parts</h1>
                     <table class="table table-hover">
                         <thead>
@@ -386,37 +387,61 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">BBa_K4468008</th>
+                            <th scope="row">BBa_K4595019</th>
                             <td>T7-PmrA-T7-PmrB-T7<br>Terminator-PmrC-Oprf-Sitag-T7 Terminator</td>
                             <td>Composite</td>
                             <td>3971</td>
                           </tr>
                           <tr>
-                            <th scope="row">BBa_K4468009</th>
+                            <th scope="row">BBa_K4595020</th>
                             <td>GolS- PgolB</td>
                             <td>Composite</td>
                             <td>2439</td>
                           </tr>
                           <tr>
-                            <th scope="row">BBa_K4468010</th>
+                            <th scope="row">BBa_K4595021</th>
                             <td>T7-PmrA-T7-PmrB(LanM)-T7<br>Terminator-PmrC-Oprf-Sitag-LanM-T7 Terminator</td>
                             <td>Composite</td>
                             <td>4289</td>
                           </tr>
                           <tr>
-                            <th scope="row">BBa_K4468011</th>
+                            <th scope="row">BBa_K4595022</th>
                             <td>T7-PmrA-T7-PmrB(FP)-T7<br>Terminator-PmrC-Oprf-Sitag-FP- T7 Terminator</td>
                             <td>Composite</td>
                             <td>4439</td>
                           </tr>
                           <tr>
-                            <th scope="row">BBa_K4468012</th>
+                            <th scope="row">BBa_K4595023</th>
                             <td>T7-GolS-PgolB-Oprf-Sitag-LanM- T7 Terminator</td>
                             <td>Composite</td>
                             <td>4200</td>
                           </tr>
                           <tr>
-                            <th scope="row">BBa_K4468013</th>
+                            <th scope="row">BBa_K4595024</th>
+                            <td>T7-GolS-PgolB-Oprf-Sitag-LanM- T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>4350</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4595025</th>
+                            <td>T7-GolS-PgolB-Oprf-Sitag-LanM- T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>4350</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4595026</th>
+                            <td>T7-GolS-PgolB-Oprf-Sitag-LanM- T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>4350</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4595027</th>
+                            <td>T7-GolS-PgolB-Oprf-Sitag-LanM- T7 Terminator</td>
+                            <td>Composite</td>
+                            <td>4350</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">BBa_K4595028</th>
                             <td>T7-GolS-PgolB-Oprf-Sitag-LanM- T7 Terminator</td>
                             <td>Composite</td>
                             <td>4350</td>
