@@ -3061,6 +3061,12 @@ li {
   position: relative;
 }
 
+.cover{
+    background-size: cover;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .row mt-4 {
   margin-top: 1.5rem;
   height: auto;
