@@ -3052,13 +3052,18 @@ li {
   height: 10px;
   max-height: 10px;
   min-height: 10px;
-  background-color: #ced55b;
+  background-color: #97d2af;
   border-bottom: 1px solid #e4ebf3;
   margin-top: -19px;
   margin-left: -20px;
   margin-right: -20px;
   padding: 0;
   position: relative;
+}
+
+.row mt-4 {
+  margin-top: 1.5rem;
+  height: auto;
 }
 
 .features-wrapper {
