@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d82e4ea-6369-44b1-96c6-2e0bd6225e83" name="Changes" comment="Update notebook.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wiki/pages/attributions.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/pages/attributions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki/pages/parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/pages/parts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,7 @@
       <workItem from="1696940158667" duration="2274000" />
       <workItem from="1697016637972" duration="11471000" />
       <workItem from="1697036926247" duration="8014000" />
-      <workItem from="1697068592948" duration="1260000" />
+      <workItem from="1697068592948" duration="4130000" />
     </task>
     <task id="LOCAL-00001" summary="Update notebook.html">
       <option name="closed" value="true" />
